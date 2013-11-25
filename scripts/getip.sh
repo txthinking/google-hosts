@@ -24,5 +24,6 @@ do
     sed -r "s/.*?    $host/$output/" hosts.all > _hosts.all && mv _hosts.all hosts.all;
 done
 
-cp hosts.all ../hosts
+echo UPDATE: `date -u` > ../hosts
+cat hosts.all >> ../hosts
 
