@@ -4,7 +4,7 @@
 #
 
 function getip(){
-    echo -n $(dig $1 @127.0.0.1 -p 54 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
+    echo -n $(dig +tcp $1 @8.8.8.8 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
 }
 
 for host in $(cat hosts.us | awk '{if($2) printf("%s\n", $2); else printf("%s\n", $1);}')
