@@ -38,10 +38,10 @@
 203.208.46.200    9.drive.google.com
 203.208.46.200    accounts.google.com
 203.208.46.200    accounts.l.google.com
-74.125.235.199    android.clients.google.com
+173.194.33.161    android.clients.google.com
 203.208.46.200    answers.google.com
-173.194.72.100    apis.google.com
-203.208.46.200    appengine.google.com
+173.194.38.136    apis.google.com
+173.194.38.136    appengine.google.com
 203.208.46.200    apps.google.com
 203.208.46.200    appspot.l.google.com
 203.208.46.200    bks0.books.google.com
@@ -79,12 +79,12 @@
 203.208.46.200    checkout.l.google.com
 203.208.46.200    chrome.google.com
 203.208.46.200    clients.l.google.com
-74.125.235.194    clients1.google.com
-74.125.235.199    clients2.google.com
-74.125.235.199    clients3.google.com
-74.125.235.199    clients4.google.com
-74.125.235.196    clients5.google.com
-74.125.235.196    clients6.google.com
+173.194.38.136    clients1.google.com
+173.194.38.136    clients2.google.com
+173.194.38.136    clients3.google.com
+173.194.38.136    clients4.google.com
+173.194.38.136    clients5.google.com
+173.194.38.136    clients6.google.com
 203.208.46.200    clients7.google.com
 203.208.46.200    code.google.com
 203.208.46.200    code.l.google.com
@@ -181,7 +181,7 @@
 203.208.46.200    linkhelp.clients.google.com
 203.208.46.200    local.google.com
 203.208.46.200    m.google.com
-74.125.128.17    mail.google.com
+173.194.38.136    mail.google.com
 203.208.46.200    map.google.com
 203.208.46.200    maps.google.com
 203.208.46.200    maps.l.google.com
@@ -217,9 +217,9 @@
 203.208.46.200    picasaweb.l.google.com
 203.208.46.200    places.google.com
 203.208.46.200    play.google.com
-173.194.72.101    plus.google.com
-203.208.46.200    plus.url.google.com
-203.208.46.200    plusone.google.com
+173.194.38.136    plus.google.com
+173.194.37.96    plus.url.google.com
+173.194.38.136    plusone.google.com
 203.208.46.200    productforums.google.com
 203.208.46.200    profiles.google.com
 203.208.46.200    reader.google.com
@@ -256,8 +256,8 @@
 203.208.46.200    suggestqueries.google.com
 203.208.46.200    suggestqueries.l.google.com
 203.208.46.200    support.google.com
-74.125.128.125    talk.google.com
-203.208.46.200    talkgadget.google.com
+173.194.70.125    talk.google.com
+173.194.38.136    talkgadget.google.com
 203.208.46.200    tbn0.google.com
 203.208.46.200    tbn1.google.com
 203.208.46.200    tbn2.google.com
@@ -286,7 +286,7 @@
 203.208.46.200    writely.l.google.com
 203.208.46.200    writely-china.l.google.com
 203.208.46.200    writely-com.l.google.com
-173.194.127.17    www.google.com
+173.194.38.136    www.google.com
 203.208.46.200    www.l.google.com
 203.208.46.200    www2.l.google.com
 203.208.46.200    www3.l.google.com
@@ -458,7 +458,7 @@
 203.208.46.200    mt3.googleapis.com
 203.208.46.200    redirector-bigcache.googleapis.com
 203.208.46.200    translate.googleapis.com
-74.125.128.95    www.googleapis.com
+173.194.66.95    www.googleapis.com
 
 203.208.46.200    autoproxy-gfwlist.googlecode.com
 203.208.46.200    chromium.googlecode.com
@@ -487,7 +487,7 @@
 203.208.46.200    accounts.google.com.hk
 203.208.46.200    blogsearch.google.com.hk
 203.208.46.200    books.google.com.hk
-74.125.235.194    clients1.google.com.hk
+173.194.38.136    clients1.google.com.hk
 203.208.46.200    desktop.google.com.hk
 203.208.46.200    encrypted.google.com.hk
 203.208.46.200    groups.google.com.hk
@@ -498,14 +498,14 @@
 203.208.46.200    maps.google.com.hk
 203.208.46.200    news.google.com.hk
 203.208.46.200    picasaweb.google.com.hk
-203.208.46.200    plus.url.google.com.hk
+173.194.37.96    plus.url.google.com.hk
 203.208.46.200    scholar.google.com.hk
 203.208.46.200    toolbar.google.com.hk
 203.208.46.200    toolbarqueries.google.com.hk
 203.208.46.200    translate.google.com.hk
 203.208.46.200    translate.google.com.hk
 203.208.46.200    wenda.google.com.hk
-173.194.127.17    www.google.com.hk
+173.194.38.136    www.google.com.hk
 
 203.208.46.200    accounts.blogger.com
 203.208.46.200    android.googlesource.com
