@@ -15,7 +15,7 @@ def GetRemoteHosts(hostsUrl):
     return hosts
 
 if __name__ == "__main__":
-    hosts = GetRemoteHosts("http://go.txthinking.com/hosts6")
+    hosts = GetRemoteHosts("http://go.txthinking.com/hosts")
     hostsPath = "/etc/hosts"
 
     search = "#TX-HOSTS\n"
