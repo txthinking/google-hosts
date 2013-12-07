@@ -4,12 +4,22 @@
 #
 
 function getip(){
-    echo -n $(dig +tcp $1 @8.8.8.8 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
+    times=0;
+    until [ `echo $ip | grep -Ec "^173"` -eq 1 ]
+    do
+        ip=$(dig +tcp $1 @8.8.8.8 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
+        times=$(($times+1));
+        if [ $times -eq 20 ]
+        then
+            break;
+        fi
+    done
+    echo -n $ip;
 }
 
-for host in $(cat hosts.us | awk '{if($2) printf("%s\n", $2); else printf("%s\n", $1);}')
+for host in $(cat hosts.do | awk '{if($2) printf("%s\n", $2); else printf("%s\n", $1);}')
 do
-    ip=$(grep -E "$host" hosts.us | awk "{if(\$2==\"$host\") printf(\"%s\", \$1);}")
+    ip=$(grep -E "$host" hosts.do | awk "{if(\$2==\"$host\") printf(\"%s\", \$1);}")
     if [ -z $ip ]
     then
         ip=$(getip $host);
@@ -24,6 +34,11 @@ do
     sed -r "s/.*?    $host/$output/" hosts.all > _hosts.all && mv _hosts.all hosts.all;
 done
 
-echo UPDATE: `date -u` > ../hosts
+> ../hosts
+echo "#" >> ../hosts
+echo "# link: https://github.com/txthinking/google-hosts" >> ../hosts
+echo "#" >> ../hosts
+echo "# UPDATE: `date -u`" >> ../hosts
+echo "#" >> ../hosts
 cat hosts.all >> ../hosts
 
