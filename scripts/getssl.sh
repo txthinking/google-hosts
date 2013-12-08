@@ -33,4 +33,5 @@ do
 done
 sort -k4 -k3n /tmp/getssl-$1 -o /tmp/getssl-$1;
 sed -i "1iIP\tLOSS\tTIME\tSSL" /tmp/getssl-$1;
+cat /tmp/getssl-$1;
 
