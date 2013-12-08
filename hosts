@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 11 10:16:06 UTC 2013
+# UPDATE: Sun Dec  8 19:31:48 UTC 2013
 #
 203.208.36.0    0.docs.google.com
 203.208.36.0    0.drive.google.com
@@ -534,6 +534,7 @@
 203.208.36.0    feeds.feedburner.com
 203.208.36.0    g.co
 203.208.36.0    goo.gl
+203.208.36.0    golang.org
 203.208.36.0    listen.googlelabs.com
 203.208.36.0    m.googlemail.com
 203.208.36.0    market.android.com
