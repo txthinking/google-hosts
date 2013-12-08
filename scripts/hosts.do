@@ -14,6 +14,7 @@
 74.125.31.91    plusone.google.com
 74.125.31.91    developers.google.com
 74.125.31.91    appengine.google.com
+74.125.31.91    golang.org
 203.208.36.21    mail.google.com
 203.208.36.29    filetransferenabled.mail.google.com
 203.208.36.29    chatenabled.mail.google.com
