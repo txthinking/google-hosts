@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 11 08:36:31 UTC 2013
+# UPDATE: Wed Dec 11 09:46:29 UTC 2013
 #
 203.208.36.0    0.docs.google.com
 203.208.36.0    0.drive.google.com
@@ -288,10 +288,10 @@
 74.125.31.91    plus.google.com
 74.125.31.91    plus.url.google.com
 74.125.31.91    plusone.google.com
-74.125.31.104    www.google.com
-74.125.31.19    mail.google.com
-74.125.31.189    filetransferenabled.mail.google.com
-74.125.31.189    chatenabled.mail.google.com
+203.208.36.16    www.google.com
+203.208.36.21    mail.google.com
+203.208.36.29    filetransferenabled.mail.google.com
+203.208.36.29    chatenabled.mail.google.com
 203.208.36.30    ssl.google-analytics.com
 203.208.36.30    www.google-analytics.com
 74.125.31.93    talkgadget.google.com
@@ -522,7 +522,7 @@
 203.208.36.0    translate.google.com.hk
 203.208.36.0    translate.google.com.hk
 203.208.36.0    wenda.google.com.hk
-74.125.31.104    www.google.com.hk
+203.208.36.16    www.google.com.hk
 
 203.208.36.0    accounts.blogger.com
 203.208.36.0    android.googlesource.com
