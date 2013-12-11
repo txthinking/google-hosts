@@ -31,6 +31,6 @@ do
     avgtime=$(grep -E "time=" /tmp/ping | awk '{print $7}' | awk 'BEGIN {FS="=";s=0;c=0;}{s+=$2;c++;} END {print s/c}');
     echo -e "$ip\t$loss\t$avgtime\t$cer" >> /tmp/getssl-$1;
 done
-echo -e "IP\tLOSS\tTIME\tSSL";
-sort -k4 -k3n /tmp/getssl-$1 > /tmp/getssl-$1;
+sort -k4 -k3n /tmp/getssl-$1 -o /tmp/getssl-$1;
+sed -i "1iIP\tLOSS\tTIME\tSSL" /tmp/getssl-$1;
 
