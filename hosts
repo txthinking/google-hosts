@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 11 09:46:29 UTC 2013
+# UPDATE: Wed Dec 11 10:03:28 UTC 2013
 #
 203.208.36.0    0.docs.google.com
 203.208.36.0    0.drive.google.com
@@ -91,7 +91,7 @@
 203.208.36.0    desktop.google.com
 203.208.36.0    desktop.l.google.com
 203.208.36.0    desktop2.google.com
-203.208.36.0    developers.google.com
+74.125.31.91    developers.google.com
 203.208.36.0    ditu.google.com
 203.208.36.0    dl.google.com
 203.208.36.0    dl.l.google.com
