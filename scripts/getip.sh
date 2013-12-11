@@ -34,11 +34,3 @@ do
     sed -r "s/.*?    $host/$output/" hosts.all > _hosts.all && mv _hosts.all hosts.all;
 done
 
-> ../hosts
-echo "#" >> ../hosts
-echo "# link: https://github.com/txthinking/google-hosts" >> ../hosts
-echo "#" >> ../hosts
-echo "# UPDATE: `date -u`" >> ../hosts
-echo "#" >> ../hosts
-cat hosts.all >> ../hosts
-
