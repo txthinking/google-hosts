@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Sun Dec  8 19:31:48 UTC 2013
+# UPDATE: Thu Dec 12 03:08:47 UTC 2013
 #
 203.208.36.0    0.docs.google.com
 203.208.36.0    0.drive.google.com
@@ -143,7 +143,7 @@
 203.208.36.0    google-public-dns-a.google.com
 203.208.36.0    google-public-dns-b.google.com
 203.208.36.0    goto.google.com
-203.208.36.0    groups.google.com
+74.125.31.91    groups.google.com
 203.208.36.0    groups.l.google.com
 203.208.36.0    groups-beta.google.com
 203.208.36.0    gxc.google.com
@@ -288,6 +288,7 @@
 74.125.31.91    plus.google.com
 74.125.31.91    plus.url.google.com
 74.125.31.91    plusone.google.com
+74.125.31.91    admin.google.com
 203.208.36.16    www.google.com
 203.208.36.21    mail.google.com
 203.208.36.29    filetransferenabled.mail.google.com
@@ -507,7 +508,7 @@
 74.125.31.132    clients1.google.com.hk
 203.208.36.0    desktop.google.com.hk
 203.208.36.0    encrypted.google.com.hk
-203.208.36.0    groups.google.com.hk
+74.125.31.91    groups.google.com.hk
 203.208.36.0    gxc.google.com.hk
 203.208.36.0    id.google.com.hk
 203.208.36.0    images.google.com.hk
@@ -534,7 +535,7 @@
 203.208.36.0    feeds.feedburner.com
 203.208.36.0    g.co
 203.208.36.0    goo.gl
-203.208.36.0    golang.org
+74.125.31.91    golang.org
 203.208.36.0    listen.googlelabs.com
 203.208.36.0    m.googlemail.com
 203.208.36.0    market.android.com
