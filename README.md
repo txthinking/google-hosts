@@ -20,8 +20,6 @@ google-hosts
 * 执行 `$ sudo python updateHosts.py`
 * 此程序不会覆盖你原有的 hosts
 
-*** 
-
 ### MORE
 
 获取Google IP段
@@ -43,8 +41,9 @@ $ scripts/find.sh 192.168
 ```
 
 输出的四个字段含义
+
 | IP | LOSS | TIME | SSL |
-| --- | --- | --- | ---|
+| --- | --- | --- | --- |
 | 此IP | 丢包率| PING值 | 可用ssl域名 |
 
 [smarthosts]: https://code.google.com/p/smarthosts/
