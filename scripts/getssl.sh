@@ -15,14 +15,14 @@ echo -e "IP\tLOSS\tTIME\tSSL"
 for((i=0;i<255;i++))
 do
     ip=${1}.${i};
-    c=$(nmap --host-timeout 3s $ip -p 443 | grep -Ec "443/tcp open");
+    c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Ec "443/tcp open");
     if [ $c -ne 1 ]
     then
         echo -e "$ip\tNO\tNO\tNO";
         echo -e "$ip\tNO\tNO\tNO" >> $output;
         continue;
     fi
-    cer=$(curl https://$ip 2>&1 | grep -Eo "'\Sx'" |head -1);
+    cer=$(curl https://$ip 2>&1 | grep -Eo "'\S*'" |head -1);
     if [ -z $cer ]
     then
         echo -e "$ip\tNO\tNO\tNO";
