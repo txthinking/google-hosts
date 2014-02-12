@@ -35,3 +35,4 @@ nosetests.xml
 .project
 .pydevproject
 scripts/output
+scripts/nohup.out
