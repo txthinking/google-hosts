@@ -20,7 +20,7 @@ google-hosts
 * 执行 `$ sudo python updateHosts.py`
 * 此程序不会覆盖你原有的 hosts
 
-### MORE
+### MORE. 脚本如何使用
 
 获取Google IP段
 
@@ -31,13 +31,15 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 查询某段IP是否可用(如:192.168.1.x)
 
 ```
-$ scripts/getssl.sh 192.168.1
+$ cd scripts
+$ ./getssl.sh 192.168.1
 ```
 
 查询某段IP是否可用(如:192.168.x.x)
 
 ```
-$ scripts/find.sh 192.168
+$ cd scripts
+$ ./find.sh 192.168
 ```
 
 输出的四个字段含义
