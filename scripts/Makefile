@@ -9,4 +9,3 @@ apply:
 	./apply.sh
 
 .PHONY: all
-

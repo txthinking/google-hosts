@@ -3,7 +3,6 @@
 # 这个是getssl.sh的一个wrapper
 # 
 # EP: 查询192.168.x.x的IP
-# $ cd scripts
 # $ ./find 192.168
 #
 # Author: cloud@txthinking.com

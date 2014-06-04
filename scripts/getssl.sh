@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 #
-# 会查询一个IP段的IP得到其 PINT值,丢报率,SSL域名
+# 会查询一个IP段的IP得到其 PING值,丢包率,SSL可用于的域名
 #
 # EP: 查询192.168.1.x的IP
-# $ cd scripts
 # $ ./getssl.sh 192.168.1 
 #
 # Author: cloud@txthinking.com
