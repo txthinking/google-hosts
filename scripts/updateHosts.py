@@ -15,10 +15,10 @@ def GetRemoteHosts(hostsUrl):
     return hosts
 
 if __name__ == "__main__":
-    hosts = GetRemoteHosts("http://go.txthinking.com/hosts")
+    hosts = GetRemoteHosts("http://tx.txthinking.com/hosts")
     hostsPath = "/etc/hosts"
 
-    search = "#TX-HOSTS\n"
+    search = "#GOOGLE-HOSTS\n"
     yourHosts = ""
     fp = open(hostsPath, "r")
     while 1:
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     yourHosts += search
     fp.close()
 
-    os.rename(hostsPath, hostsPath + "-TX-HOSTS-BK")
+    os.rename(hostsPath, hostsPath + ".BAK")
 
     fp = open(hostsPath, "w")
     fp.write(yourHosts)
