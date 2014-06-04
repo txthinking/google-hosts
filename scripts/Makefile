@@ -1,5 +1,4 @@
-nodefault:
-	@echo "NO DEFAULT TARGET";
+all: do apply
 
 do:
 	chmod +x getip.sh
@@ -10,5 +9,4 @@ apply:
 	./apply.sh
 
 .PHONY: all
-all: do apply
 

@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 #
+# 这个是getssl.sh的一个wrapper
+# 
+# EP: 查询192.168.x.x的IP
+# $ cd scripts
+# $ ./find 192.168
+#
 # Author: cloud@txthinking.com
 #
-# param $1 like "192.168"
-#
+
 for((i=0;i<255;i++))
 do
     ./getssl.sh ${1}.${i}

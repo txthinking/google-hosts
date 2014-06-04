@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 #
+# 0. 此会遍历hosts.do里面的域名并查询dns解析出的IP(如果域名前面已经写有IP则跳过查询)
+# 1. 使用得到的丢报率最小IP替换hosts.all里相对应的域名IP
+#
+# 此脚本并不会检查解析到的IP是否被GFW封锁或封锁443端口, 可移步getssl.sh查询
+#
 # Author: cloud@txthinking.com
 #
 
@@ -31,6 +36,7 @@ do
         continue;
     fi
     output="$ip    $host";
-    sed -r "s/.*?    $host/$output/" hosts.all > _hosts.all && mv _hosts.all hosts.all;
+    echo $output;
+    sed -i -r "s/.*?    $host/$output/" hosts.all
 done
 

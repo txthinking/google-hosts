@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #
+# 将hosts.all内容更新到../hosts文件
+#
 # Author: cloud@txthinking.com
 #
 
