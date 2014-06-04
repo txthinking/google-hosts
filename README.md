@@ -7,6 +7,9 @@ google-hosts
 然而朋友们对其他更复杂的代理未做深入研究, 最简单方法便是帮他们修改 hosts.<br/>
 网上其他 hosts 项目有时未能及时更新, 为了朋友们方便, 所以便弄了这个项目.<br/>
 此项目参考了[smarthosts][smarthosts], [ipv6-hosts][ipv6-hosts].<br/>
+
+IP不总是可用的, 因素可能是GFW封锁, Google IP变动.<br/>
+另外Google的好多服务都已经不挂在北京的IP上了<br/>
 你可以用此脚本自己去寻找可用IP.
 
 ***
@@ -40,7 +43,7 @@ $ ./find.sh 192.168
 | --- | --- | --- | --- |
 | 此IP | 丢包率| PING值 | 可用ssl域名 |
 
-获取Google IP段
+另外获取Google IP段可供参考
 
 ```
 $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
@@ -48,8 +51,8 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 
 ***
 
-下面的两个程序是用来将此项目内的hosts文件替换你系统hosts. 尤其是你的不动程序Windows朋友<br/>
-**注意如果此项目下的hosts文件内的IP已经失效, 下面程序就不要用了**
+下面的两个程序是用来将此项目内的hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友<br/>
+**注意**: **如果**此项目下hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)<br/>
 
 ### Windows 用户如何使用
 
