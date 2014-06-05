@@ -17,7 +17,7 @@ import (
 
 const (
     HOSTS_PATH string = "C:\\windows\\system32\\drivers\\etc\\hosts"
-    SEARCH_STRING string = "#GOOGLE-HOSTS"
+    SEARCH_STRING string = "#TX-HOSTS"
     HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
 
