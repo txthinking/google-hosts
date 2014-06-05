@@ -51,9 +51,9 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 
 ***
 
-> \>\>[hosts][hosts]\<\< *UPDATE: Thu Jun 5 06:37:51 UTC 2014*
-> 下面的两个程序是用来将此hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友
-> **注意**: **如果**此hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)
+> \>\>[hosts][hosts]\<\< *UPDATE: Thu Jun 5 06:37:51 UTC 2014* <br/>
+> 下面的两个程序是用来将此hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友<br/>
+> **注意**: **如果**此hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)<br/>
 
 ### Windows 用户
 
