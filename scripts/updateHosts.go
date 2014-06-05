@@ -9,50 +9,50 @@ package main
 
 import (
     "os"
-	"io"
+    "io"
     "bufio"
-	"strings"
-	"net/http"
+    "strings"
+    "net/http"
 )
 
 const (
     HOSTS_PATH string = "C:\\windows\\system32\\drivers\\etc\\hosts"
-	SEARCH_STRING string = "#GOOGLE-HOSTS"
-	HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
+    SEARCH_STRING string = "#GOOGLE-HOSTS"
+    HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
 
 func main(){
-	var hosts string
+    var hosts string
     f, _ := os.OpenFile(HOSTS_PATH, os.O_RDONLY, 0444)
     bnr := bufio.NewReader(f)
-	for{
+    for{
         line, err := bnr.ReadString('\n')
-		if strings.Contains(line, SEARCH_STRING) {
-			break
-		}
-		hosts += line
-		if err==io.EOF {
-			break
-		}
+        if strings.Contains(line, SEARCH_STRING) {
+            break
+        }
+        hosts += line
+        if err==io.EOF {
+            break
+        }
     }
-	f.Close();
-	hosts += "\r\n"
-	hosts += SEARCH_STRING
-	hosts += "\r\n"
+    f.Close();
+    hosts += "\r\n"
+    hosts += SEARCH_STRING
+    hosts += "\r\n"
 
-	res, _ := http.Get(HOSTS_SOURCE)
+    res, _ := http.Get(HOSTS_SOURCE)
     bnr = bufio.NewReader(res.Body)
-	for{
+    for{
         line, err := bnr.ReadString('\n')
-        hosts += line[0:len(line)-1] + "\r\n" 
-		if err==io.EOF {
-			break
-		}
+        hosts += line[0:len(line)-1] + "\r\n"
+        if err==io.EOF {
+            break
+        }
     }
 
-	os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
+    os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
     f, _ = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
-	f.WriteString(hosts);
-	println("Success!")
+    f.WriteString(hosts);
+    println("Success!")
 }
 
