@@ -1,6 +1,6 @@
 //
 // @file updateHostsForWindows.go
-// @brief fuck gfw
+// @brief for windows
 // @author cloud@txthinking.com
 // @version 0.0.1
 // @date 2013-03-15
@@ -17,8 +17,8 @@ import (
 
 const (
     HOSTS_PATH string = "C:\\windows\\system32\\drivers\\etc\\hosts"
-	SEARCH_STRING string = "#TX-HOSTS"
-	HOSTS_SOURCE string = "http://go.txthinking.com/hosts"
+	SEARCH_STRING string = "#GOOGLE-HOSTS"
+	HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
 
 func main(){
@@ -27,27 +27,30 @@ func main(){
     bnr := bufio.NewReader(f)
 	for{
         line, err := bnr.ReadString('\n')
-		if strings.Contains(line, SEARCH_STRING) || err==io.EOF {
+		if strings.Contains(line, SEARCH_STRING) {
 			break
 		}
 		hosts += line
+		if err==io.EOF {
+			break
+		}
     }
 	f.Close();
-	hosts += "\n"
+	hosts += "\r\n"
 	hosts += SEARCH_STRING
-	hosts += "\n"
+	hosts += "\r\n"
 
 	res, _ := http.Get(HOSTS_SOURCE)
     bnr = bufio.NewReader(res.Body)
 	for{
         line, err := bnr.ReadString('\n')
+        hosts += line[0:len(line)-1] + "\r\n" 
 		if err==io.EOF {
 			break
 		}
-		hosts += line
     }
 
-	os.Rename(HOSTS_PATH, HOSTS_PATH+"-BK-TX-HOSTS")
+	os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
     f, _ = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
 	f.WriteString(hosts);
 	println("Success!")
