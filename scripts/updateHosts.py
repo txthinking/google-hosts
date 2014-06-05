@@ -18,7 +18,7 @@ if __name__ == "__main__":
     hosts = GetRemoteHosts("http://tx.txthinking.com/hosts")
     hostsPath = "/etc/hosts"
 
-    search = "#GOOGLE-HOSTS\n"
+    search = "#TX-HOSTS\n"
     yourHosts = ""
     fp = open(hostsPath, "r")
     while 1:
