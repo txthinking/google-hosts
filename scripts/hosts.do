@@ -34,7 +34,6 @@
 9.drive.google.com
 admin.google.com
 answers.google.com
-apis.google.com
 appengine.google.com
 apps.google.com
 appspot.l.google.com
@@ -269,21 +268,12 @@ plus.google.com
 plus.url.google.com
 plusone.google.com
 
-adwords.google.com
 www.google.com
-m.google.com
-mail.google.com
-filetransferenabled.mail.google.com
-chatenabled.mail.google.com
 ssl.google-analytics.com
 www.google-analytics.com
-talkgadget.google.com
-accounts.google.com
 accounts.l.google.com
-checkout.google.com
 checkout.l.google.com
 sandbox.google.com
-talk.google.com
 wifi.google.com
 wifi.l.google.com
 clients.l.google.com
@@ -292,8 +282,20 @@ clients2.google.com
 clients3.google.com
 clients4.google.com
 clients5.google.com
-clients6.google.com
 clients7.google.com
+checkout.google.com
+accounts.google.com
+m.google.com
+adwords.google.com
+talk.google.com
+
+mail.google.com
+filetransferenabled.mail.google.com
+chatenabled.mail.google.com
+
+apis.google.com
+clients6.google.com
+talkgadget.google.com
 
 0-open-opensocial.googleusercontent.com
 0-focus-opensocial.googleusercontent.com

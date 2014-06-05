@@ -34,7 +34,6 @@
 74.125.31.189    9.drive.google.com
 74.125.31.113    admin.google.com
 74.125.31.113    answers.google.com
-74.125.203.113    apis.google.com
 74.125.203.101    appengine.google.com
 173.194.72.101    apps.google.com
 173.194.72.141    appspot.l.google.com
@@ -269,31 +268,34 @@
 74.125.204.102    plus.url.google.com
 74.125.204.102    plusone.google.com
 
-173.194.72.50    adwords.google.com
-74.125.203.147    www.google.com
-173.194.72.193    m.google.com
-74.125.23.19    mail.google.com
-74.125.204.189    filetransferenabled.mail.google.com
-74.125.31.189    chatenabled.mail.google.com
-173.194.127.190    ssl.google-analytics.com
-74.125.203.102    www.google-analytics.com
-74.125.23.113    talkgadget.google.com
-173.194.72.84    accounts.google.com
-74.125.23.84    accounts.l.google.com
-74.125.31.115    checkout.google.com
-173.194.72.115    checkout.l.google.com
-74.125.204.81    sandbox.google.com
+74.125.20.31    www.google.com
+74.125.20.31    ssl.google-analytics.com
+74.125.20.31    www.google-analytics.com
+74.125.20.31    accounts.l.google.com
+74.125.20.31    checkout.l.google.com
+74.125.20.31    sandbox.google.com
+74.125.20.31    wifi.google.com
+74.125.20.31    wifi.l.google.com
+74.125.20.31    clients.l.google.com
+74.125.20.31    clients1.google.com
+74.125.20.31    clients2.google.com
+74.125.20.31    clients3.google.com
+74.125.20.31    clients4.google.com
+74.125.20.31    clients5.google.com
+74.125.20.31    clients7.google.com
+74.125.20.115    checkout.google.com
+74.125.21.84    accounts.google.com
+74.125.26.193    m.google.com
+74.125.22.113    adwords.google.com
 74.125.23.125    talk.google.com
-173.194.73.123    wifi.google.com
-173.194.73.123    wifi.l.google.com
-173.194.72.138    clients.l.google.com
-74.125.31.138    clients1.google.com
-74.125.31.138    clients2.google.com
-74.125.23.102    clients3.google.com
-74.125.23.138    clients4.google.com
-74.125.31.113    clients5.google.com
-173.194.72.102    clients6.google.com
-74.125.31.133    clients7.google.com
+
+74.125.70.17    mail.google.com
+74.125.22.189    filetransferenabled.mail.google.com
+74.125.22.189    chatenabled.mail.google.com
+
+74.125.20.31    apis.google.com
+74.125.20.31    clients6.google.com
+74.125.23.125    talkgadget.google.com
 
 74.125.23.132    0-open-opensocial.googleusercontent.com
 74.125.23.132    0-focus-opensocial.googleusercontent.com
