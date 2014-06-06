@@ -57,8 +57,8 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 
 ### Windows 用户
 
-* 下载 [fuckGFW.exe][fuckGFW.exe] 双击执行即可
-* 要更新的话, 也是双击执行
+* 下载[fuckGFW-64.exe][fuckGFW-64.exe](64位)或[fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行一下即可
+* 要更新的话, 也是双击运行一下
 * 此程序不会覆盖你原有的 hosts
 
 ### *nix 用户
@@ -68,7 +68,8 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 * 此程序不会覆盖你原有的 hosts
 
 [hosts]: http://tx.txthinking.com/hosts
-[fuckGFW.exe]: http://tx.txthinking.com/fuckGFW.exe
+[fuckGFW-64.exe]: http://tx.txthinking.com/fuckGFW-64.exe
+[fuckGFW-32.exe]: http://tx.txthinking.com/fuckGFW-32.exe
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [updateHosts.py]: https://github.com/txthinking/google-hosts/tree/master/scripts/updateHosts.py
