@@ -51,21 +51,25 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 
 ***
 
-下面的两个程序是用来将此项目内的hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友<br/>
-**注意**: **如果**此项目下hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)<br/>
+> \>\>[hosts][hosts]\<\< *UPDATE: Thu Jun 5 06:37:51 UTC 2014* <br/>
+> 下面的两个程序是用来将此hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友<br/>
+> **注意**: **如果**此hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)<br/>
 
-### Windows 用户如何使用
+### Windows 用户
 
-* 下载 <http://sh.txthinking.com/fuckGFW.exe> 双击执行即可
-* 要更新的话, 也是双击执行
+* 下载[fuckGFW-64.exe][fuckGFW-64.exe](64位)或[fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行一下即可
+* 要更新的话, 也是双击运行一下
 * 此程序不会覆盖你原有的 hosts
 
-### *nix 用户如何使用
+### *nix 用户
 
 * 下载此脚本 [updateHosts.py][updateHosts.py]
 * 执行 `$ sudo python updateHosts.py`
 * 此程序不会覆盖你原有的 hosts
 
+[hosts]: http://tx.txthinking.com/hosts
+[fuckGFW-64.exe]: http://tx.txthinking.com/fuckGFW-64.exe
+[fuckGFW-32.exe]: http://tx.txthinking.com/fuckGFW-32.exe
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [updateHosts.py]: https://github.com/txthinking/google-hosts/tree/master/scripts/updateHosts.py
