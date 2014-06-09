@@ -16,11 +16,11 @@ def GetRemoteHosts(hostsUrl):
 
 if __name__ == "__main__":
     hosts = GetRemoteHosts("http://tx.txthinking.com/hosts")
-    hostsPath = "/etc/hosts"
+    hostsPath = "/etc/hostsaaa"
 
     search = "#TX-HOSTS\n"
     yourHosts = ""
-    fp = open(hostsPath, "r")
+    fp = open(hostsPath, "a+")
     while 1:
         line = fp.readline()
         if line == search or line == "":
