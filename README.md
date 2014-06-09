@@ -51,7 +51,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 
 ***
 
-> \>\>[hosts][hosts]\<\< *UPDATE: Thu Jun 5 06:37:51 UTC 2014* <br/>
+> \>\>[hosts][hosts]\<\< *UPDATE: Mon Jun 9 07:21:51 UTC 2014* <br/>
 > 下面的两个程序是用来将此hosts文件替换你系统hosts. 尤其是你的不懂程序的Windows朋友<br/>
 > **注意**: **如果**此hosts文件内的IP失效, 就需要你自己用脚本查询了(如果你查到好的IP不妨pull一下 :D)<br/>
 
@@ -61,7 +61,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.8.8
 * 要更新的话, 也是双击运行一下
 * 此程序不会覆盖你原有的 hosts
 
-### *nix 用户
+### *nix/OSX 用户
 
 * 下载此脚本 [updateHosts.py][updateHosts.py]
 * 执行 `$ sudo python updateHosts.py`
