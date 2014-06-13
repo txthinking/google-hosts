@@ -16,7 +16,7 @@ import (
 )
 
 const (
-    HOSTS_PATH string = "C:\\windows\\system32\\drivers\\etc\\hosts"
+    HOSTS_PATH string = os.Getenv("SYSTEMROOT")+"\\system32\\drivers\\etc\\hosts"
     SEARCH_STRING string = "#TX-HOSTS"
     HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
