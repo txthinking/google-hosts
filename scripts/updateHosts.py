@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     search = "#TX-HOSTS\n"
     yourHosts = ""
-    fp = open(hostsPath, "r")
+    fp = open(hostsPath, "a+")
     while 1:
         line = fp.readline()
         if line == search or line == "":
