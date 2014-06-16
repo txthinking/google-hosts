@@ -1,9 +1,7 @@
 //
-// @file updateHostsForWindows.go
-// @brief for windows
-// @author cloud@txthinking.com
-// @version 0.0.1
-// @date 2013-03-15
+// update hosts for windows
+// cloud@txthinking.com
+// date 2013-03-15
 //
 package main
 
@@ -13,6 +11,7 @@ import (
     "bufio"
     "strings"
     "net/http"
+    "time"
 )
 
 const (
@@ -40,7 +39,12 @@ func main(){
     hosts += SEARCH_STRING
     hosts += "\r\n"
 
-    res, _ := http.Get(HOSTS_SOURCE)
+    res, err := http.Get(HOSTS_SOURCE)
+    if err != nil{
+        println(err.Error())
+        time.Sleep(3 * time.Second)
+        return
+    }
     bnr = bufio.NewReader(res.Body)
     for{
         line, err := bnr.ReadString('\n')
@@ -53,6 +57,7 @@ func main(){
     os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
     f, _ = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
     f.WriteString(hosts);
-    println("Success!")
+    println("Success! Will close after 3 seconds.")
+    time.Sleep(3 * time.Second)
 }
 

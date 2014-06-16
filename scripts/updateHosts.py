@@ -20,14 +20,15 @@ if __name__ == "__main__":
 
     search = "#TX-HOSTS\n"
     yourHosts = ""
-    fp = open(hostsPath, "r")
-    while 1:
-        line = fp.readline()
-        if line == search or line == "":
-            break
-        yourHosts += line
+    if os.path.isfile(hostsPath):
+        fp = open(hostsPath, "r")
+        while 1:
+            line = fp.readline()
+            if line == search or line == "":
+                break
+            yourHosts += line
+        fp.close()
     yourHosts += search
-    fp.close()
 
     os.rename(hostsPath, hostsPath + ".BAK")
 
