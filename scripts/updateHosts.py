@@ -22,9 +22,8 @@ if __name__ == "__main__":
     yourHosts = ""
     if os.path.isfile(hostsPath):
         fp = open(hostsPath, "r")
-        while 1:
-            line = fp.readline()
-            if line == search or line == "":
+        for line in fp:
+            if line == search:
                 break
             yourHosts += line
         fp.close()
