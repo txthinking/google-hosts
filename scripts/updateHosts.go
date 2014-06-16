@@ -63,4 +63,3 @@ func main(){
 	println("Success!")
 	time.Sleep(3 * time.Second)
 }
-
