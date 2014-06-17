@@ -1,63 +1,64 @@
 //
-// update hosts for windows
-// cloud@txthinking.com
-// date 2013-03-15
+// Update hosts for windows
 //
+
 package main
 
 import (
     "os"
     "io"
     "bufio"
-    "strings"
     "net/http"
     "time"
+    "bytes"
+    "io/ioutil"
 )
 
-const (
+var (
     HOSTS_PATH string = os.Getenv("SYSTEMROOT")+"\\system32\\drivers\\etc\\hosts"
-    SEARCH_STRING string = "#TX-HOSTS"
+    SEARCH_STRING []byte = []byte("#TX-HOSTS")
     HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
 
 func main(){
-    var hosts string
-    f, _ := os.OpenFile(HOSTS_PATH, os.O_RDONLY, 0444)
-    bnr := bufio.NewReader(f)
-    for{
-        line, err := bnr.ReadString('\n')
-        if strings.Contains(line, SEARCH_STRING) {
-            break
+    var hosts []byte
+    f, err := os.OpenFile(HOSTS_PATH, os.O_RDONLY, 0444)
+    if err == nil {
+        bnr := bufio.NewReader(f)
+        for{
+            line, _, err := bnr.ReadLine()
+            if bytes.Compare(line,SEARCH_STRING)==0 || err == io.EOF{
+                break
+            }
+            hosts = append(hosts, append(line,[]byte("\r\n")...)...)
         }
-        hosts += line
-        if err==io.EOF {
-            break
-        }
+        f.Close()
     }
-    f.Close();
-    hosts += "\r\n"
-    hosts += SEARCH_STRING
-    hosts += "\r\n"
+    hosts = append(hosts, append(SEARCH_STRING,[]byte("\r\n")...)...)
 
     res, err := http.Get(HOSTS_SOURCE)
-    if err != nil{
+    if err != nil {
         println(err.Error())
         time.Sleep(3 * time.Second)
         return
     }
-    bnr = bufio.NewReader(res.Body)
-    for{
-        line, err := bnr.ReadString('\n')
-        hosts += line[0:len(line)-1] + "\r\n"
-        if err==io.EOF {
-            break
-        }
+    data, err := ioutil.ReadAll(res.Body)
+    if err != nil {
+        println(err.Error())
+        time.Sleep(3 * time.Second)
+        return
     }
+    data = bytes.Replace(data, []byte("\n"), []byte("\r\n"), -1)
+    hosts = append(hosts, data...)
 
-    os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
-    f, _ = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
-    f.WriteString(hosts);
-    println("Success! Will close after 3 seconds.")
+    os.Rename(HOSTS_PATH, HOSTS_PATH+"-BAK-TX-HOSTS")
+    f, err = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
+    if err != nil {
+        println(err.Error())
+        time.Sleep(3 * time.Second)
+        return
+    }
+    f.Write(hosts)
+    println("Success!")
     time.Sleep(3 * time.Second)
 }
-
