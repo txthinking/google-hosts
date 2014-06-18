@@ -5,7 +5,8 @@ google-hosts
 
 因为我每天都要访问Google, 以及我的朋友们也会访问Google.<br/>
 然而朋友们对其他更复杂的代理未做深入研究, 最简单方法便是帮他们修改 hosts.<br/>
-为了朋友们方便, 所以便弄了这个项目. 包含了大部分Google服务(G+, Drive, Gmail, Hangouts, Calendar等等等等)<br/>
+为了朋友们方便, 所以便弄了这个项目.<br/>
+包含了大部分Google服务, G+, Drive, Gmail, Hangouts, Calendar等<br/>
 域名参考了[smarthosts][smarthosts], [ipv6-hosts][ipv6-hosts].<br/>
 
 IP不总是可用的, 因素可能是GFW封锁或Google IP变动.<br/>
@@ -73,3 +74,5 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [updateHosts.py]: https://github.com/txthinking/google-hosts/tree/master/scripts/updateHosts.py
+
+
