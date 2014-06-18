@@ -444,6 +444,7 @@ mt3.googleapis.com
 redirector-bigcache.googleapis.com
 translate.googleapis.com
 www.googleapis.com
+content.googleapis.com
 
 appspot.com
 chrometophone.appspot.com
@@ -554,4 +555,5 @@ panoramio.com
 static.panoramio.com
 tpc.googlesyndication.com
 uberproxy.corp.google.com
+developer.chrome.com
 

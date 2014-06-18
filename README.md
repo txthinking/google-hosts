@@ -5,12 +5,12 @@ google-hosts
 
 因为我每天都要访问Google, 以及我的朋友们也会访问Google.<br/>
 然而朋友们对其他更复杂的代理未做深入研究, 最简单方法便是帮他们修改 hosts.<br/>
-网上其他 hosts 项目有时未能及时更新, 为了朋友们方便, 所以便弄了这个项目.<br/>
-此项目参考了[smarthosts][smarthosts], [ipv6-hosts][ipv6-hosts].<br/>
+为了朋友们方便, 所以便弄了这个项目. 包含了大部分Google服务(G+, Drive, Gmail, Hangouts, Calendar等等等等)<br/>
+域名参考了[smarthosts][smarthosts], [ipv6-hosts][ipv6-hosts].<br/>
 
-IP不总是可用的, 因素可能是GFW封锁, Google IP变动.<br/>
+IP不总是可用的, 因素可能是GFW封锁或Google IP变动.<br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
-你可以用此脚本自己去寻找可用IP.
+**你可以用此脚本去寻找可用IP.**
 
 ***
 
@@ -46,7 +46,7 @@ $ ./find.sh 192.168
 另外获取Google IP段可供参考
 
 ```
-$ nslookup -q=TXT _netblocks.google.com 8.8.8.8
+$ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
 ***

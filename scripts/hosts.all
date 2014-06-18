@@ -444,6 +444,7 @@
 74.125.23.95    redirector-bigcache.googleapis.com
 173.194.72.95    translate.googleapis.com
 173.194.72.95    www.googleapis.com
+74.125.205.95    content.googleapis.com
 
 74.125.23.141    appspot.com
 173.194.72.141    chrometophone.appspot.com
@@ -554,4 +555,5 @@
 173.194.72.128    static.panoramio.com
 173.194.72.132    tpc.googlesyndication.com
 74.125.31.129    uberproxy.corp.google.com
+74.125.20.31    developer.chrome.com
 

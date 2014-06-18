@@ -449,6 +449,7 @@
 74.125.205.95    redirector-bigcache.googleapis.com
 74.125.205.95    translate.googleapis.com
 74.125.205.95    www.googleapis.com
+74.125.205.95    content.googleapis.com
 
 74.125.26.141    appspot.com
 74.125.26.141    chrometophone.appspot.com
@@ -557,7 +558,8 @@
 74.125.20.191    accounts.blogger.com
 74.125.20.152    tpc.googlesyndication.com
 74.125.20.129    uberproxy.corp.google.com
-173.194.37.99    www.panoramio.com
-173.194.37.99    panoramio.com
-173.194.76.128    static.panoramio.com
+74.125.20.31    www.panoramio.com
+74.125.20.31    panoramio.com
+74.125.20.31    static.panoramio.com
+74.125.20.31    developer.chrome.com
 
