@@ -268,6 +268,7 @@ plus.google.com
 plus.url.google.com
 plusone.google.com
 keep.google.com
+0.client-channel.google.com
 
 www.google.com
 ssl.google-analytics.com
