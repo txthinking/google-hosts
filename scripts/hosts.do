@@ -531,6 +531,7 @@ wenda.google.com.hk
 www.google.com.hk
 
 android.googlesource.com
+gerrit.googlesource.com
 auth.keyhole.com
 chrome.angrybirds.com
 developer.android.com
