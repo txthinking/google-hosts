@@ -267,6 +267,7 @@ ytstatic.l.google.com
 plus.google.com
 plus.url.google.com
 plusone.google.com
+keep.google.com
 
 www.google.com
 ssl.google-analytics.com

@@ -267,6 +267,7 @@
 74.125.203.100    plus.google.com
 74.125.204.102    plus.url.google.com
 74.125.204.102    plusone.google.com
+74.125.204.102    keep.google.com
 
 74.125.20.31    www.google.com
 74.125.20.31    ssl.google-analytics.com
@@ -531,6 +532,7 @@
 74.125.31.94    www.google.com.hk
 
 173.194.72.82    android.googlesource.com
+173.194.72.82    gerrit.googlesource.com
 173.194.72.100    auth.keyhole.com
 74.125.31.91    chrome.angrybirds.com
 74.125.31.100    developer.android.com
