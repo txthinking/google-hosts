@@ -18,6 +18,9 @@ domains="
     google.com
     *.google.com
     www.google.com
+    accounts.google.com
+    checkout.google.com
+    adwords.google.com
     mail.google.com
     *.mail.google.com
     *.googleusercontent.com
