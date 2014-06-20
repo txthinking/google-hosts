@@ -5,7 +5,7 @@
 # Author: cloud@txthinking.com
 #
 
-if [ $# -lt 0 ]
+if [ $# -eq 0 ]
 then
     echo -e "Usage:\n"
     echo -e "    $ ./auto.sh 192.168"
