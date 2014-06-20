@@ -14,7 +14,7 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动.<br/>
 
 ### 脚本如何使用
 
-0. 查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
+查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
 
 ```
 $ cd google-hosts/scripts
@@ -29,14 +29,14 @@ $ ./find.sh 192.168
 $ ./find.sh 192.168 192.169 192.170.1
 ```
 
-1. 从output目录(由find.sh生成)里自动选择最佳IP写入hosts.all文件
+从output目录(由find.sh生成)里自动选择最佳IP写入hosts.all文件
 
 ```
 $ cd google-hosts/scripts
 $ ./select.sh
 ```
 
-2. 使用hosts.all文件更新../hosts文件
+使用hosts.all文件更新../hosts文件
 
 ```
 $ cd google-hosts/scripts
@@ -65,7 +65,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
 > \>\> [hosts][hosts] \<\< `UPDATE: Mon Jun 9 07:21:51 UTC 2014` <br/>
-> 下面的两个程序是用来将项目内hosts文件替换你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
+> 下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
 > **注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
 
 ### Windows 用户
@@ -86,5 +86,3 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [updateHosts.py]: https://github.com/txthinking/google-hosts/tree/master/scripts/updateHosts.py
-
-
