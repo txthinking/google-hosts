@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # 会查询一个IP段的IP得到其 PING值,丢包率,SSL可用于的域名
+# 结果输出到output目录
 #
 # EP: 查询192.168.1.x的IP
 # $ ./getssl.sh 192.168.1 
@@ -25,7 +26,7 @@ do
         echo -e "$ip\tNO\tNO\tNO" >> $output;
         continue;
     fi
-    cer=$(curl https://$ip 2>&1 | grep -Eo "'\S*'" |head -1);
+    cer=$(curl https://$ip 2>&1 | grep -Eo "'\S*'" |head -1|cut -d \' -f 2);
     if [ -z $cer ]
     then
         echo -e "$ip\tNO\tNO\tNO";
@@ -45,8 +46,5 @@ do
     echo -e "$ip\t$loss\t$avgtime\t$cer";
     echo -e "$ip\t$loss\t$avgtime\t$cer" >> $output;
 done
-sort -k4 -k3n $output -o $output;
-sed -i "1iIP\tLOSS\tTIME\tSSL" $output;
-cat $output;
+sort -k4 -k2n -k3n $output -o $output;
 echo "[INFO] Done in $output";
-

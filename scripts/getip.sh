@@ -10,7 +10,7 @@ function getip(){
     times=0;
     until [ `echo $ip | grep -Ec "^(173|60|74)"` -eq 1 ]
     do
-        ip=$(dig +tcp $1 @168.95.1.1 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
+        ip=$(dig +tcp $1 @208.67.220.220 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}');
         times=$(($times+1));
         if [ $times -eq 20 ]
         then
@@ -37,4 +37,3 @@ do
     echo $output;
     sed -i -r "s/.*?    $host/$output/" hosts.all
 done
-

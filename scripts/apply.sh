@@ -13,4 +13,3 @@ echo "# UPDATE: `date -u`" >> ../hosts
 echo "#" >> ../hosts
 echo "127.0.0.1    localhost" >> ../hosts
 cat hosts.all >> ../hosts
-

@@ -8,8 +8,8 @@
 # Author: cloud@txthinking.com
 #
 
+# TODO receive more type
 for((i=0;i<255;i++))
 do
     ./getssl.sh ${1}.${i}
 done
-

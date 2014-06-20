@@ -119,7 +119,6 @@ ghs.google.com
 ghs.l.google.com
 ghs46.google.com
 ghs46.l.google.com
-google.com
 googleapis.l.google.com
 googleapis-ajax.google.com
 googleapis-ajax.l.google.com
@@ -286,6 +285,7 @@ accounts.google.com
 m.google.com
 adwords.google.com
 talk.google.com
+google.com
 
 plus.google.com
 plus.url.google.com
