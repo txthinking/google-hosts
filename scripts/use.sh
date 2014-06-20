@@ -13,10 +13,10 @@
 
 if [ $# -lt 2 ]
 then
-    echo -e "Usage:\n";
-    echo -e "    $ ./use.sh DOMAIN IP";
-    echo -e "\nView use.sh file to see more.\n";
-    exit 0;
+    echo -e "Usage:\n"
+    echo -e "    $ ./use.sh DOMAIN IP"
+    echo -e "\nView use.sh file to see more.\n"
+    exit 0
 fi
 
 if [ "$(echo $1 | cut -d . -f 1)" = "*" ]

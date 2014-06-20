@@ -28,16 +28,34 @@ domains="
     "
 for domain in $domains
 do
-    p=${domain//\./\\\.};
-    p=${p//\*/\\\*};
+    p=${domain//\./\\\.}
+    p=${p//\*/\\\*}
     line=$(grep -Eh "\s$p$" output/* | sort -k2n -k3n |head -1)
 
     if [ -z "$line" ]
     then
-        echo "[WARNING] $domain";
-        continue;
+        echo "[WARNING] $domain"
+        continue
     fi
-    echo $line;
-    ip=$(echo $line | cut -d " " -f 1)
+    echo $line
+    ip=$(echo $line | awk '{print $1}')
     ./use.sh $domain $ip
+
+    # extra
+    if [ $domain = "*.googleusercontent.com" ]
+    then
+        ./use.sh *.ggpht.com $ip
+    elif [ $domain = "*.googleapis.com" ]
+    then
+        ./use.sh talkgadget.google.com $ip
+    elif [ $domain = "*.appspot.com" ]
+    then
+        ./use.sh appspot.com $ip
+    elif [ $domain = "*.google.com" ]
+    then
+        for host in $(grep -E -A 9999 "cn$" hosts.all | awk '{print $2}')
+        do
+            ./use.sh $host $ip
+        done
+    fi
 done

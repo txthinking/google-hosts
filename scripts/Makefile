@@ -1,11 +1,16 @@
-all: do apply
+nodefault:
+	@echo "No default target.";
+	@echo "Valid targets: getip, select, apply.";
+	@echo "Recommend: Using shell script directly.";
 
-do:
-	chmod +x getip.sh
+getip: getip.sh
+	@chmod +x getip.sh
 	./getip.sh
 
-apply:
-	chmod +x apply.sh
-	./apply.sh
+select: select.sh
+	@chmod +x select.sh
+	./select.sh
 
-.PHONY: all
+apply: apply.sh
+	@chmod +x apply.sh
+	./apply.sh
