@@ -264,15 +264,11 @@ www2.l.google.com
 www3.l.google.com
 www4.l.google.com
 ytstatic.l.google.com
-plus.google.com
-plus.url.google.com
-plusone.google.com
 keep.google.com
 0.client-channel.google.com
+android.clients.google.com
 
 www.google.com
-ssl.google-analytics.com
-www.google-analytics.com
 accounts.l.google.com
 checkout.l.google.com
 sandbox.google.com
@@ -290,6 +286,10 @@ accounts.google.com
 m.google.com
 adwords.google.com
 talk.google.com
+
+plus.google.com
+plus.url.google.com
+plusone.google.com
 
 mail.google.com
 filetransferenabled.mail.google.com
@@ -478,20 +478,6 @@ gmaps-samples-flash.googlecode.com
 google-code-feed-gadget.googlecode.com
 smarthosts.googlecode.com
 
-accounts.youtube.com
-apiblog.youtube.com
-help.youtube.com
-insight.youtube.com
-m.youtube.com
-ytimg.l.google.com
-www.youtube.com
-i.ytimg.com
-i1.ytimg.com
-i2.ytimg.com
-i3.ytimg.com
-i4.ytimg.com
-s.ytimg.com
-
 blogsearch.google.cn
 ditu.google.cn
 gg.google.cn
@@ -532,6 +518,21 @@ translate.google.com.hk
 wenda.google.com.hk
 www.google.com.hk
 
+accounts.youtube.com
+apiblog.youtube.com
+help.youtube.com
+insight.youtube.com
+m.youtube.com
+ytimg.l.google.com
+www.youtube.com
+i.ytimg.com
+i1.ytimg.com
+i2.ytimg.com
+i3.ytimg.com
+i4.ytimg.com
+s.ytimg.com
+ssl.google-analytics.com
+www.google-analytics.com
 android.googlesource.com
 gerrit.googlesource.com
 auth.keyhole.com
@@ -559,4 +560,3 @@ static.panoramio.com
 tpc.googlesyndication.com
 uberproxy.corp.google.com
 developer.chrome.com
-

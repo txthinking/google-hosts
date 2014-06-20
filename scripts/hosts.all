@@ -264,11 +264,9 @@
 74.125.203.102    www3.l.google.com
 173.194.72.118    www4.l.google.com
 74.125.31.100    ytstatic.l.google.com
-74.125.203.100    plus.google.com
-74.125.204.102    plus.url.google.com
-74.125.204.102    plusone.google.com
 74.125.204.102    keep.google.com
 74.125.20.31    0.client-channel.google.com
+74.125.20.31    android.clients.google.com
 
 74.125.20.31    www.google.com
 74.125.20.31    ssl.google-analytics.com
@@ -290,6 +288,10 @@
 74.125.26.193    m.google.com
 74.125.22.113    adwords.google.com
 74.125.23.125    talk.google.com
+
+74.125.203.100    plus.google.com
+74.125.204.102    plus.url.google.com
+74.125.204.102    plusone.google.com
 
 74.125.70.17    mail.google.com
 74.125.22.189    filetransferenabled.mail.google.com
@@ -478,20 +480,6 @@
 74.125.203.82    google-code-feed-gadget.googlecode.com
 173.194.72.82    smarthosts.googlecode.com
 
-74.125.23.113    accounts.youtube.com
-173.194.72.121    apiblog.youtube.com
-74.125.31.106    help.youtube.com
-173.194.72.100    insight.youtube.com
-74.125.204.102    m.youtube.com
-74.125.204.138    ytimg.l.google.com
-74.125.203.190    www.youtube.com
-173.194.72.100    i.ytimg.com
-74.125.203.113    i1.ytimg.com
-74.125.204.101    i2.ytimg.com
-74.125.203.101    i3.ytimg.com
-74.125.31.113    i4.ytimg.com
-173.194.72.139    s.ytimg.com
-
 74.125.31.160    blogsearch.google.cn
 74.125.204.160    ditu.google.cn
 74.125.31.101    gg.google.cn
@@ -532,6 +520,19 @@
 173.194.72.102    wenda.google.com.hk
 74.125.31.94    www.google.com.hk
 
+74.125.23.113    accounts.youtube.com
+173.194.72.121    apiblog.youtube.com
+74.125.31.106    help.youtube.com
+173.194.72.100    insight.youtube.com
+74.125.204.102    m.youtube.com
+74.125.204.138    ytimg.l.google.com
+74.125.203.190    www.youtube.com
+173.194.72.100    i.ytimg.com
+74.125.203.113    i1.ytimg.com
+74.125.204.101    i2.ytimg.com
+74.125.203.101    i3.ytimg.com
+74.125.31.113    i4.ytimg.com
+173.194.72.139    s.ytimg.com
 173.194.72.82    android.googlesource.com
 173.194.72.82    gerrit.googlesource.com
 173.194.72.100    auth.keyhole.com
@@ -559,4 +560,3 @@
 173.194.72.132    tpc.googlesyndication.com
 74.125.31.129    uberproxy.corp.google.com
 74.125.20.31    developer.chrome.com
-

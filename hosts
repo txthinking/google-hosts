@@ -269,11 +269,9 @@
 74.125.20.31    www3.l.google.com
 74.125.20.31    www4.l.google.com
 74.125.20.31    ytstatic.l.google.com
-74.125.20.31    plus.google.com
-74.125.20.31    plus.url.google.com
-74.125.20.31    plusone.google.com
 74.125.20.31    keep.google.com
 74.125.20.31    0.client-channel.google.com
+74.125.20.31    android.clients.google.com
 
 74.125.20.31    www.google.com
 74.125.20.31    ssl.google-analytics.com
@@ -295,6 +293,10 @@
 74.125.26.193    m.google.com
 74.125.22.113    adwords.google.com
 74.125.129.125    talk.google.com
+
+74.125.20.31    plus.google.com
+74.125.20.31    plus.url.google.com
+74.125.20.31    plusone.google.com
 
 74.125.70.17    mail.google.com
 74.125.22.189    filetransferenabled.mail.google.com
@@ -484,20 +486,6 @@
 74.125.26.82    smarthosts.googlecode.com
 74.125.26.82    ipv6-hosts.googlecode.com
 
-74.125.20.31    accounts.youtube.com
-74.125.20.31    apiblog.youtube.com
-74.125.20.31    help.youtube.com
-74.125.20.31    insight.youtube.com
-74.125.20.31    m.youtube.com
-74.125.20.31    ytimg.l.google.com
-74.125.20.31    www.youtube.com
-74.125.20.31    i.ytimg.com
-74.125.20.31    i1.ytimg.com
-74.125.20.31    i2.ytimg.com
-74.125.20.31    i3.ytimg.com
-74.125.20.31    i4.ytimg.com
-74.125.20.31    s.ytimg.com
-
 74.125.20.31    blogsearch.google.cn
 74.125.20.31    ditu.google.cn
 74.125.20.31    gg.google.cn
@@ -538,6 +526,19 @@
 74.125.20.31    wenda.google.com.hk
 74.125.20.31    www.google.com.hk
 
+74.125.20.31    accounts.youtube.com
+74.125.20.31    apiblog.youtube.com
+74.125.20.31    help.youtube.com
+74.125.20.31    insight.youtube.com
+74.125.20.31    m.youtube.com
+74.125.20.31    ytimg.l.google.com
+74.125.20.31    www.youtube.com
+74.125.20.31    i.ytimg.com
+74.125.20.31    i1.ytimg.com
+74.125.20.31    i2.ytimg.com
+74.125.20.31    i3.ytimg.com
+74.125.20.31    i4.ytimg.com
+74.125.20.31    s.ytimg.com
 74.125.20.31    android.googlesource.com
 74.125.20.31    gerrit.googlesource.com
 74.125.20.31    auth.keyhole.com
@@ -565,4 +566,3 @@
 74.125.20.31    panoramio.com
 74.125.20.31    static.panoramio.com
 74.125.20.31    developer.chrome.com
-
