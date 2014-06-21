@@ -15,9 +15,7 @@ then
 fi
 
 domains="
-    google.com
     *.google.com
-    www.google.com
     accounts.google.com
     checkout.google.com
     adwords.google.com
@@ -28,12 +26,12 @@ domains="
     *.googleapis.com
     *.appspot.com
     *.googlecode.com
+    *.google-analytics.com
+    ssl.google-analytics.com
     "
 for domain in $domains
 do
-    p=${domain//\./\\\.}
-    p=${p//\*/\\\*}
-    line=$(grep -Eh "\s$p$" output/* | sort -k2n -k3n |head -1)
+    line=$(./filter.sh $domain | head -1)
 
     if [ -z "$line" ]
     then
@@ -56,6 +54,7 @@ do
         ./use.sh appspot.com $ip
     elif [ $domain = "*.google.com" ]
     then
+        ./use.sh google.com $ip
         for host in $(grep -E -A 9999 "cn$" hosts.all | awk '{print $2}')
         do
             ./use.sh $host $ip

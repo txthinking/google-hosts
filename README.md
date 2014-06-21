@@ -8,13 +8,14 @@ google-hosts
 于人于己方便, 便弄了这个项目. 包含了大部分Google服务, G+, Drive, Gmail, Hangouts, Calendar等<br/>
 域名参考了[smarthosts][smarthosts], [ipv6-hosts][ipv6-hosts].<br/>
 
-IP不总是可用的, 因素可能是GFW封锁或Google IP变动.<br/>
+IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
+同一个IP, A省能连上, B省就可能连不上(网络封锁). 上一个小时能连上, 这一个小时连不上(间歇性阻断)<br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
-此项目不仅是鱼更是渔**你可以用此脚本去寻找可用IP.**
+**你可以用此脚本去寻找最适合你的稳定IP.**
 
 ### 脚本如何使用
 
-查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
+`find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
 
 ```
 $ cd google-hosts/scripts
@@ -29,21 +30,45 @@ $ ./find.sh 192.168
 $ ./find.sh 192.168 192.169 192.170.1
 ```
 
-从output目录(由find.sh生成)里自动选择最佳IP写入hosts.all文件
+`filter.sh`从output目录(由find.sh生成)过滤域名
+
+```
+$ cd google-hosts/scripts
+
+# 过滤可用于*.google.com的域名
+$ ./filter.sh *.google.com
+
+# 过滤可用于mail.google.com的域名
+$ ./filter.sh mail.google.com
+```
+
+`use.sh`使用过滤出的某个IP并更新hosts.all文件
+
+```
+$ cd google-hosts/scripts
+
+# 使用可用于*.google.com 的IP 192.168.1.1
+$ ./use.sh *.google.com 192.168.1.1
+
+# 使用可用于mail.google.com 的IP 192.168.1.1
+$ ./use.sh mail.google.com 192.168.1.1
+```
+
+`select.sh`结合了filter.sh, use.sh,自动选择最佳IP写入hosts.all文件, 并做了些特殊域名处理
 
 ```
 $ cd google-hosts/scripts
 $ ./select.sh
 ```
 
-使用hosts.all文件更新../hosts文件
+`apply.sh`使用hosts.all文件更新../hosts文件
 
 ```
 $ cd google-hosts/scripts
 $ ./apply.sh
 ```
 
-**自动执行以上三步**
+`auto.sh`结合了find.sh, select.sh, apply.sh自动查询后选择最佳IP写入../hosts文件
 
 ```
 $ cd google-hosts/scripts
@@ -64,7 +89,7 @@ $ ./auto.sh 192.168 192.169.1
 $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
-> \>\> [hosts][hosts] \<\< `UPDATE: Mon Jun 9 07:21:51 UTC 2014` <br/>
+> \>\> [hosts][hosts] \<\< `UPDATE: Sat Jun 21 06:09:56 UTC 2014` <br/>
 > 下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
 > **注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
 

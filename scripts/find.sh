@@ -20,7 +20,7 @@ fi
 
 for n
 do
-    if [ -z "$(echo $n | cut -d . -f 3)" ]
+    if [ -n "$(echo $n | cut -d . -f 3)" ]
     then
         ./getssl.sh $n
     else
