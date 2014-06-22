@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Sat Jun 21 06:09:27 UTC 2014
+# UPDATE: Sun Jun 22 04:22:04 UTC 2014
 #
 127.0.0.1    localhost
 74.125.129.114    0.docs.google.com
@@ -406,6 +406,12 @@
 74.125.26.133    www-hangouts-opensocial.googleusercontent.com
 74.125.26.133    www-onepick-opensocial.googleusercontent.com
 74.125.26.133    books.googleusercontent.com
+74.125.26.133    ci1.googleusercontent.com
+74.125.26.133    ci2.googleusercontent.com
+74.125.26.133    ci3.googleusercontent.com
+74.125.26.133    ci4.googleusercontent.com
+74.125.26.133    ci5.googleusercontent.com
+74.125.26.133    ci6.googleusercontent.com
 
 74.125.26.133    lh1.ggpht.com
 74.125.26.133    lh2.ggpht.com

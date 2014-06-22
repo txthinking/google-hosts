@@ -29,17 +29,26 @@ domains="
     *.google-analytics.com
     ssl.google-analytics.com
     "
+filter_data=/tmp/filter.sh.data
 for domain in $domains
 do
-    line=$(./filter.sh $domain | head -1)
+    ./filter.sh $domain > $filter_data
+    while read line
+    do
+        ip=$(echo $line | awk '{print $1}')
+        c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Ec "443/tcp open")
+        if [ $c -ge 1 ]
+        then
+            echo $line
+            break
+        fi
+    done < $filter_data
 
     if [ -z "$line" ]
     then
         echo "[WARNING] $domain"
         continue
     fi
-    echo $line
-    ip=$(echo $line | awk '{print $1}')
     ./use.sh $domain $ip
 
     # extra
