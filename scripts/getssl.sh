@@ -28,14 +28,14 @@ echo -e "IP\tLOSS\tTIME\tSSL"
 for((i=0;i<255;i++))
 do
     ip=${1}.${i}
-    c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Ec "443/tcp open")
+    c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
     if [ $c -ne 1 ]
     then
         echo -e "$ip\tNO\tNO\tNO"
         echo -e "$ip\tNO\tNO\tNO" >> $output
         continue
     fi
-    cer=$(curl https://$ip 2>&1 | grep -Eo "'\S*'" |head -1|cut -d \' -f 2)
+    cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
     if [ -z $cer ]
     then
         echo -e "$ip\tNO\tNO\tNO"
@@ -44,7 +44,7 @@ do
     fi
     ping=/tmp/ping-$ip
     ping -c 5 -w 5 $ip > $ping
-    loss=$(grep -Eo "\w+%" $ping)
+    loss=$(grep -Po "\w+%" $ping)
     c=$(grep -c "time=" $ping)
     if [ $c -eq 0 ]
     then
@@ -52,7 +52,7 @@ do
         echo -e "$ip\t$loss\tNO\t$cer" >> $output
         continue
     fi
-    avgtime=$(grep -E "time=" $ping | awk '{print $7}' | awk 'BEGIN {FS="=";s=0;c=0;}{s+=$2;c++;} END {print s/c}')
+    avgtime=$(grep -P "time=" $ping | awk '{print $7}' | awk 'BEGIN {FS="=";s=0;c=0;}{s+=$2;c++;} END {print s/c}')
     echo -e "$ip\t$loss\t$avgtime\t$cer"
     echo -e "$ip\t$loss\t$avgtime\t$cer" >> $output
 done

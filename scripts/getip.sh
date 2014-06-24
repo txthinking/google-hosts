@@ -8,9 +8,9 @@
 
 function getip(){
     times=0;
-    until [ `echo $ip | grep -Ec "^(173|60|74)"` -eq 1 ]
+    until [ `echo $ip | grep -Pc "^(173|60|74)"` -eq 1 ]
     do
-        ip=$(dig +tcp $1 @208.67.220.220 | grep -E 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}')
+        ip=$(dig +tcp $1 @208.67.220.220 | grep -P 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}')
         times=$(($times+1))
         if [ $times -eq 20 ]
         then
@@ -22,7 +22,7 @@ function getip(){
 
 for host in $(cat hosts.do | awk '{if($2) printf("%s\n", $2); else printf("%s\n", $1);}')
 do
-    ip=$(grep -E "$host" hosts.do | awk "{if(\$2==\"$host\") printf(\"%s\", \$1);}")
+    ip=$(grep -P "$host" hosts.do | awk "{if(\$2==\"$host\") printf(\"%s\", \$1);}")
     if [ -z $ip ]
     then
         ip=$(getip $host)

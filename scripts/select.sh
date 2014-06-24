@@ -36,7 +36,7 @@ do
     while read line
     do
         ip=$(echo $line | awk '{print $1}')
-        c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Ec "443/tcp open")
+        c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
         if [ $c -ge 1 ]
         then
             echo $line
@@ -64,7 +64,7 @@ do
     elif [ $domain = "*.google.com" ]
     then
         ./use.sh google.com $ip
-        for host in $(grep -E -A 9999 "cn$" hosts.all | awk '{print $2}')
+        for host in $(grep -P -A 9999 "cn$" hosts.all | awk '{print $2}')
         do
             ./use.sh $host $ip
         done
