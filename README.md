@@ -13,6 +13,14 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
 **你可以用此脚本去寻找最适合你的稳定IP.**
 
+### 脚本依赖
+
+* grep v2.20
+* sed v4.2.2
+* awk v4.1.1
+* nmap v6.46
+* dig v9.9.2-P2
+
 ### 脚本如何使用
 
 `find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
@@ -89,7 +97,7 @@ $ ./auto.sh 192.168 192.169.1
 $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
-> \>\> [hosts][hosts] \<\< `UPDATE: Sat Jun 21 06:09:56 UTC 2014` <br/>
+> \>\> [hosts][hosts] \<\< `UPDATE: Tue Jun 24 10:14:07 UTC 2014` <br/>
 > 下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
 > **注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
 
