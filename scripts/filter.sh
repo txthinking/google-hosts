@@ -28,4 +28,4 @@ fi
 
 p=${1//\./\\\.}
 p=${p//\*/\\\*}
-grep -Eh "\s$p$" output/* | sort -k2n -k3n
+grep -Eh "$p$" output/* | sort -k2n -k3n
