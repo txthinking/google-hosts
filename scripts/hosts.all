@@ -282,7 +282,7 @@
 74.125.21.115    checkout.google.com
 74.125.21.84    accounts.google.com
 74.125.21.98    m.google.com
-74.125.21.51    adwords.google.com
+74.125.21.112    adwords.google.com
 74.125.21.98    talk.google.com
 74.125.21.98    google.com
 
@@ -290,13 +290,13 @@
 74.125.21.98    plus.url.google.com
 74.125.21.98    plusone.google.com
 
-74.125.21.98    mail.google.com
+74.125.24.19    mail.google.com
 74.125.25.189    filetransferenabled.mail.google.com
 74.125.25.189    chatenabled.mail.google.com
 
 74.125.21.98    apis.google.com
 74.125.21.98    clients6.google.com
-74.125.21.98    talkgadget.google.com
+74.125.130.95    talkgadget.google.com
 
 74.125.22.133    0-open-opensocial.googleusercontent.com
 74.125.22.133    0-focus-opensocial.googleusercontent.com
@@ -422,39 +422,39 @@
 74.125.22.133    nt4.ggpht.com
 74.125.22.133    nt5.ggpht.com
 
-74.125.205.120    csi.gstatic.com
-74.125.205.120    g0.gstatic.com
-74.125.205.120    g1.gstatic.com
-74.125.205.120    g2.gstatic.com
-74.125.205.120    g3.gstatic.com
-74.125.205.120    maps.gstatic.com
-74.125.205.120    mt0.gstatic.com
-74.125.205.120    mt1.gstatic.com
-74.125.205.120    mt2.gstatic.com
-74.125.205.120    mt3.gstatic.com
-74.125.205.120    mt4.gstatic.com
-74.125.205.120    mt5.gstatic.com
-74.125.205.120    mt6.gstatic.com
-74.125.205.120    mt7.gstatic.com
-74.125.205.120    ssl.gstatic.com
-74.125.205.120    t0.gstatic.com
-74.125.205.120    t1.gstatic.com
-74.125.205.120    t2.gstatic.com
-74.125.205.120    t3.gstatic.com
-74.125.205.120    www.gstatic.com
+74.125.136.120    csi.gstatic.com
+74.125.136.120    g0.gstatic.com
+74.125.136.120    g1.gstatic.com
+74.125.136.120    g2.gstatic.com
+74.125.136.120    g3.gstatic.com
+74.125.136.120    maps.gstatic.com
+74.125.136.120    mt0.gstatic.com
+74.125.136.120    mt1.gstatic.com
+74.125.136.120    mt2.gstatic.com
+74.125.136.120    mt3.gstatic.com
+74.125.136.120    mt4.gstatic.com
+74.125.136.120    mt5.gstatic.com
+74.125.136.120    mt6.gstatic.com
+74.125.136.120    mt7.gstatic.com
+74.125.136.120    ssl.gstatic.com
+74.125.136.120    t0.gstatic.com
+74.125.136.120    t1.gstatic.com
+74.125.136.120    t2.gstatic.com
+74.125.136.120    t3.gstatic.com
+74.125.136.120    www.gstatic.com
 
-74.125.205.95    ajax.googleapis.com
-74.125.205.95    chart.googleapis.com
-74.125.205.95    fonts.googleapis.com
-74.125.205.95    maps.googleapis.com
-74.125.205.95    mt0.googleapis.com
-74.125.205.95    mt1.googleapis.com
-74.125.205.95    mt2.googleapis.com
-74.125.205.95    mt3.googleapis.com
-74.125.205.95    redirector-bigcache.googleapis.com
-74.125.205.95    translate.googleapis.com
-74.125.205.95    www.googleapis.com
-74.125.205.95    content.googleapis.com
+74.125.130.95    ajax.googleapis.com
+74.125.130.95    chart.googleapis.com
+74.125.130.95    fonts.googleapis.com
+74.125.130.95    maps.googleapis.com
+74.125.130.95    mt0.googleapis.com
+74.125.130.95    mt1.googleapis.com
+74.125.130.95    mt2.googleapis.com
+74.125.130.95    mt3.googleapis.com
+74.125.130.95    redirector-bigcache.googleapis.com
+74.125.130.95    translate.googleapis.com
+74.125.130.95    www.googleapis.com
+74.125.130.95    content.googleapis.com
 
 74.125.26.141    appspot.com
 74.125.26.141    chrometophone.appspot.com

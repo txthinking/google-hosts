@@ -92,7 +92,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ### 最新hosts
 
 \>\> [hosts][hosts] \<\< `UPDATE: Tue Jun 24 10:14:07 UTC 2014` <br/>
-**注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
+**注意**: 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了<br/>
 下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
 
 #### Windows 用户
@@ -113,3 +113,5 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [updateHosts.py]: https://github.com/txthinking/google-hosts/tree/master/scripts/updateHosts.py
+
+
