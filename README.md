@@ -13,14 +13,6 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
 **你可以用此脚本去寻找最适合你的稳定IP.**
 
-### 脚本依赖
-
-* grep v2.20
-* sed v4.2.2
-* awk v4.1.1
-* nmap v6.46
-* dig v9.9.2-P2
-
 ### 脚本如何使用
 
 `find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)
@@ -97,17 +89,19 @@ $ ./auto.sh 192.168 192.169.1
 $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
-> \>\> [hosts][hosts] \<\< `UPDATE: Tue Jun 24 10:14:07 UTC 2014` <br/>
-> 下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
-> **注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
+### 最新hosts
 
-### Windows 用户
+\>\> [hosts][hosts] \<\< `UPDATE: Tue Jun 24 10:14:07 UTC 2014` <br/>
+**注意**: 如果此hosts文件内的IP失效, 就需要你自己用脚本查询了<br/>
+下面的两个程序是用来将项目内hosts文件更新你系统hosts. 尤其对不懂程序的Windows朋友很方便<br/>
+
+#### Windows 用户
 
 * 下载[fuckGFW-64.exe][fuckGFW-64.exe](64位)或[fuckGFW-32.exe][fuckGFW-32.exe](32位)
 * 双击运行一下即可. 更新也是双击运行一下
 * 此程序不会覆盖你原有的 hosts
 
-### *nix/OSX 用户
+#### \*nix/OSX 用户
 
 * 下载此脚本 [updateHosts.py][updateHosts.py]
 * 执行 `$ sudo python /PATH/TO/updateHosts.py`, 更新也一样

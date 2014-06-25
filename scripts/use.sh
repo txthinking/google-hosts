@@ -21,7 +21,9 @@ fi
 
 if [ "$(echo $1 | cut -d . -f 1)" = "*" ]
 then
-    sed -i -r "s/.*?    (.${1//\./\\\.})$/$2    \1/" hosts.all
+    p=${1//\./\\\.}
+    sed -i -r "s/.*?    (.$p)$/$2    \1/" hosts.all
 else
-    sed -i -r "s/.*?    (${1//\./\\\.})$/$2    \1/" hosts.all
+    p=${1//\./\\\.}
+    sed -i -r "s/.*?    ($p)$/$2    \1/" hosts.all
 fi
