@@ -265,6 +265,15 @@
 74.125.21.98    ytstatic.l.google.com
 74.125.21.98    keep.google.com
 74.125.21.98    0.client-channel.google.com
+74.125.21.98    1.client-channel.google.com
+74.125.21.98    2.client-channel.google.com
+74.125.21.98    3.client-channel.google.com
+74.125.21.98    4.client-channel.google.com
+74.125.21.98    5.client-channel.google.com
+74.125.21.98    6.client-channel.google.com
+74.125.21.98    7.client-channel.google.com
+74.125.21.98    8.client-channel.google.com
+74.125.21.98    9.client-channel.google.com
 74.125.21.98    android.clients.google.com
 74.125.21.98    www.google.com
 74.125.21.98    accounts.l.google.com
@@ -285,6 +294,7 @@
 74.125.21.51    adwords.google.com
 74.125.21.98    talk.google.com
 74.125.21.98    google.com
+74.125.21.98    domains.google.com
 
 74.125.21.98    plus.google.com
 74.125.21.98    plus.url.google.com
