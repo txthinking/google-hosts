@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Thu Jun 26 10:23:18 UTC 2014
+# UPDATE: Sat Jul 19 14:22:47 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -271,6 +271,15 @@
 74.125.21.98    ytstatic.l.google.com
 74.125.21.98    keep.google.com
 74.125.21.98    0.client-channel.google.com
+74.125.21.98    1.client-channel.google.com
+74.125.21.98    2.client-channel.google.com
+74.125.21.98    3.client-channel.google.com
+74.125.21.98    4.client-channel.google.com
+74.125.21.98    5.client-channel.google.com
+74.125.21.98    6.client-channel.google.com
+74.125.21.98    7.client-channel.google.com
+74.125.21.98    8.client-channel.google.com
+74.125.21.98    9.client-channel.google.com
 74.125.21.98    android.clients.google.com
 74.125.21.98    www.google.com
 74.125.21.98    accounts.l.google.com
@@ -291,6 +300,8 @@
 74.125.21.51    adwords.google.com
 74.125.21.98    talk.google.com
 74.125.21.98    google.com
+74.125.21.98    domains.google.com
+74.125.21.98    gmail.google.com
 
 74.125.21.98    plus.google.com
 74.125.21.98    plus.url.google.com
@@ -414,6 +425,7 @@
 74.125.22.133    ci5.googleusercontent.com
 74.125.22.133    ci6.googleusercontent.com
 74.125.22.133    doc-0g-9c-docs.googleusercontent.com
+74.125.22.133    storage-ugc.l.googleusercontent.com
 
 74.125.22.133    lh1.ggpht.com
 74.125.22.133    lh2.ggpht.com
@@ -461,6 +473,8 @@
 74.125.202.95    translate.googleapis.com
 74.125.202.95    www.googleapis.com
 74.125.202.95    content.googleapis.com
+74.125.202.95    commondatastorage.googleapis.com
+74.125.202.95    storage.googleapis.com
 
 74.125.26.141    appspot.com
 74.125.26.141    chrometophone.appspot.com
@@ -482,6 +496,7 @@
 74.125.26.141    wcproxyx.appspot.com
 74.125.26.141    balsamiqgdrive.appspot.com
 74.125.26.141    www.appspot.com
+74.125.26.141    codereview.appspot.com
 
 74.125.26.82    autoproxy-gfwlist.googlecode.com
 74.125.26.82    chromium.googlecode.com
@@ -571,3 +586,4 @@
 74.125.21.98    developer.chrome.com
 74.125.21.97    ssl.google-analytics.com
 74.125.21.98    www.google-analytics.com
+74.125.21.98    www.gmail.com
