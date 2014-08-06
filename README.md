@@ -4,7 +4,7 @@ google-hosts
 
 ---
 
-#### 为什么有这个项目
+### 为什么有这个项目
 
 因为我每天都要访问Google, 以及我的朋友们也会访问Google.<br/>
 然而朋友们对其他更复杂的代理未做深入研究, 最简单方法便是帮他们修改 hosts.<br/>
@@ -17,7 +17,7 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
 
 ---
 
-#### 如何自己用程序找IP
+### 如何自己用程序找IP
 
 **`find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)**
 
@@ -95,14 +95,15 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 ---
 
-#### 使用当前的[hosts][hosts]
+### 使用当前的[hosts][hosts]
 
-**注意**: 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了<br/>
-下面的程序不会覆盖你原有的hosts
+>> 注意:
+>> 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了
+>> 下面的程序不会覆盖你原有的hosts
 
 **Windows 用户**
 
-使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位)/[fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
+使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位) / [fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
 
 **\*nix/OSX 用户**
 
@@ -110,9 +111,9 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 ---
 
-#### 小技巧
+### 小技巧
 
-* 请使用国际版google. 防止google重定向到本地化的google: 访问一下<https://www.google.com/ncr>
+* 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>
 * 请使用`https`而不是`http`访问.
 
 [hosts]: http://tx.txthinking.com/hosts
@@ -120,6 +121,6 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 [fuckGFW-32.exe]: http://tx.txthinking.com/fuckGFW-32.exe
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
-[L0]: #c
-[L1]: #a
-[L2]: #b
+[L0]: #%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%89%BEip
+[L1]: #%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E7%9A%84hosts
+[L2]: #%E5%B0%8F%E6%8A%80%E5%B7%A7
