@@ -93,9 +93,9 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 ### 使用当前的[hosts][hosts]
 
-> 注意:
-> 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了
-> 下面的程序不会覆盖你原有的hosts
+> 注意:<br/>
+> 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了<br/>
+> 下面的程序不会覆盖你原有的hosts<br/>
 
 **Windows 用户**
 
