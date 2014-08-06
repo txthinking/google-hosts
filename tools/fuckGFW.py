@@ -27,9 +27,8 @@ if __name__ == "__main__":
                 break
             yourHosts += line
         fp.close()
+        os.rename(hostsPath, hostsPath + ".BAK")
     yourHosts += search
-
-    os.rename(hostsPath, hostsPath + ".BAK")
 
     fp = open(hostsPath, "w")
     fp.write(yourHosts)
@@ -37,4 +36,3 @@ if __name__ == "__main__":
     fp.close()
 
     print "Success"
-

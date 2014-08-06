@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Sat Jul 19 14:22:47 UTC 2014
+# UPDATE: Wed Aug  6 16:27:57 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -460,6 +460,7 @@
 74.125.202.120    t2.gstatic.com
 74.125.202.120    t3.gstatic.com
 74.125.202.120    www.gstatic.com
+74.125.202.120    fonts.gstatic.com
 
 74.125.202.95    ajax.googleapis.com
 74.125.202.95    chart.googleapis.com
@@ -497,6 +498,7 @@
 74.125.26.141    balsamiqgdrive.appspot.com
 74.125.26.141    www.appspot.com
 74.125.26.141    codereview.appspot.com
+74.125.26.141    google-developers.appspot.com
 
 74.125.26.82    autoproxy-gfwlist.googlecode.com
 74.125.26.82    chromium.googlecode.com
