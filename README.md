@@ -15,8 +15,6 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
 同一个IP, A省能连上, B省就可能连不上(网络封锁). 上一个小时能连上, 这一个小时连不上(间歇性阻断)<br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
 
----
-
 ### 如何自己用程序找IP
 
 **`find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)**
@@ -93,8 +91,6 @@ $ ./auto.sh 192.168 192.169.1
 $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
----
-
 ### 使用当前的[hosts][hosts]
 
 > 注意:
@@ -109,12 +105,19 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
 
----
-
 ### 小技巧
 
 * 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>
 * 请使用`https`而不是`http`访问.
+
+### Contributing
+
+* vim:ts=4:sw=4:expandtab
+* Please create your pull request on `develop` branch
+
+### License
+
+Licensed under The [MIT][MIT] License
 
 [hosts]: http://tx.txthinking.com/hosts
 [fuckGFW-64.exe]: http://tx.txthinking.com/fuckGFW-64.exe
@@ -124,3 +127,4 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 [L0]: #%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%89%BEip
 [L1]: #%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E7%9A%84hosts
 [L2]: #%E5%B0%8F%E6%8A%80%E5%B7%A7
+[MIT]: https://github.com/txthinking/google-hosts/blob/master/LICENSE
