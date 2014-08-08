@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 '''
 Update hosts for *nix
 Author: cloud@txthinking.com
