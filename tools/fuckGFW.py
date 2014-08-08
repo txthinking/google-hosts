@@ -1,38 +1,48 @@
 '''
-File: updateHosts.py
+Update hosts for *nix
 Author: cloud@txthinking.com
 Version: 0.0.1
 Date: 2012-10-24 14:35:39
 '''
 
-import urllib
+import urllib2
 import os
+import sys
 
-def GetRemoteHosts(hostsUrl):
-    fp = urllib.urlopen(hostsUrl)
-    hosts = [line for line in fp]
-    fp.close()
+HOSTS_PATH = "/etc/hosts"
+HOSTS_SOURCE = "http://tx.txthinking.com/hosts"
+SEARCH_STRING = "#TX-HOSTS"
+
+def GetRemoteHosts(url):
+    f = urllib2.urlopen(url, timeout=5)
+    hosts = [line for line in f]
+    f.close()
     return hosts
 
-if __name__ == "__main__":
-    hosts = GetRemoteHosts("http://tx.txthinking.com/hosts")
-    hostsPath = "/etc/hosts"
+def main():
+    try:
+        hosts = GetRemoteHosts(HOSTS_SOURCE)
+    except IOError:
+        print "Could't connect to %s. Try again." % HOSTS_SOURCE
+        sys.exit(1)
 
-    search = "#TX-HOSTS\n"
-    yourHosts = ""
-    if os.path.isfile(hostsPath):
-        fp = open(hostsPath, "r")
-        for line in fp:
-            if line == search:
+    yours = ""
+    if os.path.isfile(HOSTS_PATH):
+        f = open(HOSTS_PATH, "r")
+        for line in f:
+            if SEARCH_STRING in line:
                 break
-            yourHosts += line
-        fp.close()
-        os.rename(hostsPath, hostsPath + ".BAK")
-    yourHosts += search
+            yours += line
+        f.close()
+        os.rename(HOSTS_PATH, HOSTS_PATH + ".BAK")
+    yours += SEARCH_STRING + "\n"
 
-    fp = open(hostsPath, "w")
-    fp.write(yourHosts)
-    fp.writelines(hosts) #iterable sequence hosts
+    fp = open(HOSTS_PATH, "w")
+    fp.write(yours)
+    fp.writelines(hosts)
     fp.close()
 
     print "Success"
+
+if __name__ == "__main__":
+    main()
