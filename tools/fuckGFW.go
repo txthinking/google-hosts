@@ -1,5 +1,5 @@
 //
-// Update hosts for windows
+// Update hosts for all OS
 //
 
 package main
@@ -12,53 +12,69 @@ import (
     "time"
     "bytes"
     "io/ioutil"
+    "runtime"
+    "fmt"
 )
 
-var (
-    HOSTS_PATH string = os.Getenv("SYSTEMROOT")+"\\system32\\drivers\\etc\\hosts"
-    SEARCH_STRING []byte = []byte("#TX-HOSTS")
+const (
+    SEARCH_STRING string = "#TX-HOSTS"
     HOSTS_SOURCE string = "http://tx.txthinking.com/hosts"
 )
 
+func Exit(message string){
+    fmt.Println(message)
+    time.Sleep(5 * time.Second)
+    os.Exit(0)
+}
+
 func main(){
-    var hosts []byte
+    BR := "\n"
+    HOSTS_PATH := "/etc/hosts"
+    if runtime.GOOS == "windows"{
+        BR = "\r\n"
+        HOSTS_PATH = os.Getenv("SYSTEMROOT")+"\\system32\\drivers\\etc\\hosts"
+    }
+
+    r, err := http.Get(HOSTS_SOURCE)
+    if err != nil {
+        Exit(err.Error() + "Try again.")
+    }
+    data, err := ioutil.ReadAll(r.Body)
+    if err != nil {
+        Exit(err.Error())
+    }
+    hosts := string(bytes.Replace(data, []byte("\n"), []byte(BR), -1))
+
+    yours := ""
     f, err := os.OpenFile(HOSTS_PATH, os.O_RDONLY, 0444)
     if err == nil {
         bnr := bufio.NewReader(f)
         for{
             line, _, err := bnr.ReadLine()
-            if bytes.Compare(line,SEARCH_STRING)==0 || err == io.EOF{
+            if bytes.Equal(line,[]byte(SEARCH_STRING)) || err == io.EOF{
                 break
             }
-            hosts = append(hosts, append(line,[]byte("\r\n")...)...)
+            yours += string(line) + BR
         }
-        f.Close()
+        err = f.Close()
+        if err != nil {
+            Exit(err.Error())
+        }
+        err = os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
+        if err != nil {
+            Exit(err.Error())
+        }
     }
-    hosts = append(hosts, append(SEARCH_STRING,[]byte("\r\n")...)...)
+    yours += SEARCH_STRING + BR
 
-    res, err := http.Get(HOSTS_SOURCE)
-    if err != nil {
-        println(err.Error())
-        time.Sleep(3 * time.Second)
-        return
-    }
-    data, err := ioutil.ReadAll(res.Body)
-    if err != nil {
-        println(err.Error())
-        time.Sleep(3 * time.Second)
-        return
-    }
-    data = bytes.Replace(data, []byte("\n"), []byte("\r\n"), -1)
-    hosts = append(hosts, data...)
-
-    os.Rename(HOSTS_PATH, HOSTS_PATH+"-BAK-TX-HOSTS")
     f, err = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
     if err != nil {
-        println(err.Error())
-        time.Sleep(3 * time.Second)
-        return
+        Exit(err.Error())
     }
-    f.Write(hosts)
-    println("Success!")
-    time.Sleep(3 * time.Second)
+    _, err = f.WriteString(yours + hosts)
+    if err != nil {
+        Exit(err.Error())
+    }
+
+    Exit("Success!")
 }

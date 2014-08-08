@@ -113,13 +113,13 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ### 小技巧
 
 * 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>
-* 请使用`https`而不是`http`访问.
+* 请使用`https`替代`http`访问.
 
 ---
 
 ### Contributing
 
-* vim:ts=4:sw=4:expandtab
+* vim:ts=4:sw=4:expandtab:ff=unix:encoding=utf8
 * Please create your pull request on `develop` branch
 
 ### License
