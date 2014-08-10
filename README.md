@@ -1,10 +1,10 @@
 google-hosts
 ============
 [**授人以渔**][L0] | [**授人以鱼**][L1] | [**小技巧**][L2]
-
 ---
 
-### 为什么有这个项目
+为什么有这个项目
+---
 
 因为我每天都要访问Google, 以及我的朋友们也会访问Google.<br/>
 然而朋友们对其他更复杂的代理未做深入研究, 最简单方法便是帮他们修改 hosts.<br/>
@@ -15,9 +15,8 @@ IP不总是可用的, 因素可能是GFW封锁或Google IP变动. <br/>
 同一个IP, A省能连上, B省就可能连不上(网络封锁). 上一个小时能连上, 这一个小时连不上(间歇性阻断)<br/>
 另外Google的好多服务都已经不挂在北京的IP上了<br/>
 
+如何自己用程序找IP
 ---
-
-### 如何自己用程序找IP
 
 **`find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)**
 
@@ -93,9 +92,8 @@ $ ./auto.sh 192.168 192.169.1
 $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 ```
 
+使用当前的[hosts][hosts]
 ---
-
-### 使用当前的[hosts][hosts]
 
 > 如果此hosts文件内的IP失效, 就需要你自己用上面提到的脚本查询了<br/>
 > 下面的程序不会覆盖你原有的hosts<br/>
@@ -108,21 +106,20 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
 
+小技巧
 ---
-
-### 小技巧
 
 * 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>
 * 请使用`https`替代`http`访问.
 
+Contributing
 ---
-
-### Contributing
 
 * vim:ts=4:sw=4:expandtab:ff=unix:encoding=utf8
 * Please create your pull request on `develop` branch
 
-### License
+License
+---
 
 Licensed under The [MIT][MIT] License
 
