@@ -23,7 +23,7 @@ const (
 
 func Exit(message string){
     fmt.Println(message)
-    time.Sleep(5 * time.Second)
+    time.Sleep(3 * time.Second)
     os.Exit(0)
 }
 
@@ -60,18 +60,20 @@ func main(){
         if err != nil {
             Exit(err.Error())
         }
-        err = os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
-        if err != nil {
-            Exit(err.Error())
-        }
+        _ = os.Remove(HOSTS_PATH+".BAK")
+        _ = os.Rename(HOSTS_PATH, HOSTS_PATH+".BAK")
     }
     yours += SEARCH_STRING + BR
 
-    f, err = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_CREATE, 0644)
+    f, err = os.OpenFile(HOSTS_PATH, os.O_WRONLY|os.O_TRUNC|os.O_CREATE, 0644)
     if err != nil {
         Exit(err.Error())
     }
     _, err = f.WriteString(yours + hosts)
+    if err != nil {
+        Exit(err.Error())
+    }
+    err = f.Close()
     if err != nil {
         Exit(err.Error())
     }
