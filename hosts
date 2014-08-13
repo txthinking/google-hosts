@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Aug  6 16:27:57 UTC 2014
+# UPDATE: Wed Aug 13 12:34:29 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -427,7 +427,6 @@
 74.125.22.133    doc-0g-9c-docs.googleusercontent.com
 74.125.22.133    storage-ugc.l.googleusercontent.com
 74.125.22.133    9gbg8d94v5ctadt6ar5f0cgi03hatscu-a-hangout-opensocial.googleusercontent.com
-74.125.22.133    doc-08-b4-docs.googleusercontent.com
 
 74.125.22.133    lh1.ggpht.com
 74.125.22.133    lh2.ggpht.com
@@ -572,6 +571,7 @@
 74.125.21.98    g.co
 74.125.21.98    goo.gl
 74.125.21.98    golang.org
+74.125.21.98    blog.golang.org
 74.125.21.98    listen.googlelabs.com
 74.125.21.98    m.googlemail.com
 74.125.21.98    market.android.com
