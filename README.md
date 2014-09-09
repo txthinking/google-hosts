@@ -1,6 +1,6 @@
 google-hosts
 ============
-[**授人以渔**][L0] | [**授人以鱼**][L1] | [**小技巧**][L2]
+[**授人以渔**][L0] | [**授人以鱼**][L1] | [**必读技巧**][L2]
 
 为什么有这个项目
 ---
@@ -101,11 +101,15 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位) / [fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
 
+0. 请先退出所有杀毒软件
+1. Windows XP 以上请右键使用管理员身份运行
+
+
 **\*nix/OSX 用户**
 
 使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
 
-小技巧
+必读技巧
 ---
 
 * 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>

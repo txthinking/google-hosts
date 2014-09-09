@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Aug 13 12:34:29 UTC 2014
+# UPDATE: Tue Sep  9 10:58:21 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -548,6 +548,7 @@
 74.125.21.98    wenda.google.com.hk
 74.125.21.98    www.google.com.hk
 74.125.21.98    accounts.youtube.com
+74.125.21.98    s.youtube.com
 74.125.21.98    apiblog.youtube.com
 74.125.21.98    help.youtube.com
 74.125.21.98    insight.youtube.com
