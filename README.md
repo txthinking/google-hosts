@@ -99,15 +99,15 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 **Windows 用户**
 
-使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位) / [fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
 
 0. 请先退出所有杀毒软件
 1. Windows XP 以上请右键使用管理员身份运行
+2. 使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位) / [fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
 
 
 **\*nix/OSX 用户**
 
-使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
+0. 使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
 
 必读技巧
 ---
@@ -133,5 +133,5 @@ Licensed under The [MIT][MIT] License
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [L0]: #%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%89%BEip
 [L1]: #%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E7%9A%84hosts
-[L2]: #%E5%B0%8F%E6%8A%80%E5%B7%A7
+[L2]: #%E5%BF%85%E8%AF%BB%E6%8A%80%E5%B7%A7
 [MIT]: https://github.com/txthinking/google-hosts/blob/master/LICENSE
