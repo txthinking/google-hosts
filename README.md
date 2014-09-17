@@ -101,7 +101,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 
 0. 请先退出所有杀毒软件
-1. Windows XP 以上请右键使用管理员身份运行
+1. Windows XP 以上请使用管理员身份运行或赋予hosts文件可写权限
 2. 使用及更新: [fuckGFW-64.exe][fuckGFW-64.exe](64位) / [fuckGFW-32.exe][fuckGFW-32.exe](32位)双击运行
 
 
