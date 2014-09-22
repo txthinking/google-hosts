@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Thu Sep 11 15:30:10 UTC 2014
+# UPDATE: Mon Sep 22 18:52:58 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -567,6 +567,7 @@
 74.125.21.98    auth.keyhole.com
 74.125.21.98    chrome.angrybirds.com
 74.125.21.98    developer.android.com
+74.125.21.98    source.android.com
 74.125.21.98    domains.googlesyndication.com
 74.125.21.98    earthengine.googlelabs.com
 74.125.21.98    feeds.feedburner.com
