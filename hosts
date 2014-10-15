@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Mon Sep 22 18:52:58 UTC 2014
+# UPDATE: Wed Oct 15 01:16:19 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -315,6 +315,8 @@
 74.125.21.98    clients6.google.com
 74.125.202.95    talkgadget.google.com
 
+74.125.202.95    chromoting-oauth.talkgadget.google.com
+
 74.125.22.133    0-open-opensocial.googleusercontent.com
 74.125.22.133    0-focus-opensocial.googleusercontent.com
 74.125.22.133    1-focus-opensocial.googleusercontent.com
@@ -575,6 +577,9 @@
 74.125.21.98    goo.gl
 74.125.21.98    golang.org
 74.125.21.98    blog.golang.org
+74.125.21.98    tip.golang.org
+74.125.21.98    play.golang.org
+74.125.21.98    tour.golang.org
 74.125.21.98    listen.googlelabs.com
 74.125.21.98    m.googlemail.com
 74.125.21.98    market.android.com
