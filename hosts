@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Oct 15 01:16:19 UTC 2014
+# UPDATE: Thu Oct 16 10:10:06 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -302,6 +302,18 @@
 74.125.21.98    google.com
 74.125.21.98    domains.google.com
 74.125.21.98    gmail.google.com
+74.125.21.98    android-china.l.google.com
+74.125.21.98    www-china.l.google.com
+74.125.21.98    www1-china.l.google.com
+74.125.21.98    www2-china.l.google.com
+74.125.21.98    www3-china.l.google.com
+74.125.21.98    www4-china.l.google.com
+74.125.21.98    android.l.google.com
+74.125.21.98    googlehosted.l.google.com
+74.125.21.98    talkx.l.google.com
+74.125.21.98    talk.l.google.com
+74.125.21.98    ext.google.com
+74.125.21.98    pki.google.com
 
 74.125.21.98    plus.google.com
 74.125.21.98    plus.url.google.com
@@ -480,6 +492,8 @@
 74.125.202.95    content.googleapis.com
 74.125.202.95    commondatastorage.googleapis.com
 74.125.202.95    storage.googleapis.com
+74.125.202.95    android.googleapis.com
+74.125.202.95    play.googleapis.com
 
 74.125.26.141    appspot.com
 74.125.26.141    chrometophone.appspot.com
@@ -599,3 +613,11 @@
 74.125.21.97    ssl.google-analytics.com
 74.125.21.98    www.google-analytics.com
 74.125.21.98    www.gmail.com
+74.125.21.98    proxy.googlezip.net
+74.125.21.98    base0.googlehosted.com
+74.125.21.98    base1.googlehosted.com
+74.125.21.98    base2.googlehosted.com
+74.125.21.98    base3.googlehosted.com
+74.125.21.98    base4.googlehosted.com
+74.125.21.98    base5.googlehosted.com
+
