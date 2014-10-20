@@ -219,8 +219,6 @@ r18---sn-npo7enes.c.android.clients.google.com
 r19---sn-npo7enes.c.android.clients.google.com
 r20---sn-npo7enes.c.android.clients.google.com
 
-manifest.googlevideo.com
-redirector.googlevideo.com
 r1---sn-25g7sm76.googlevideo.com
 r2---sn-25g7sm76.googlevideo.com
 r3---sn-25g7sm76.googlevideo.com
