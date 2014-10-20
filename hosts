@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Mon Oct 20 02:54:49 UTC 2014
+# UPDATE: Mon Oct 20 03:00:17 UTC 2014
 #
 127.0.0.1    localhost
 74.125.21.98    0.docs.google.com
@@ -799,6 +799,8 @@
 74.125.21.98    i4.ytimg.com
 74.125.21.98    s.ytimg.com
 74.125.21.98    upload.youtube.com
+74.125.21.98    manifest.googlevideo.com
+74.125.21.98    redirector.googlevideo.com
 
 74.125.21.98    googlesource.com
 74.125.21.98    android.googlesource.com
@@ -1090,8 +1092,6 @@
 173.194.49.120    r19---sn-npo7enes.c.android.clients.google.com
 173.194.49.121    r20---sn-npo7enes.c.android.clients.google.com
 
-74.125.239.129    manifest.googlevideo.com
-74.125.239.132    redirector.googlevideo.com
 208.117.236.134    r1---sn-25g7sm76.googlevideo.com
 208.117.236.135    r2---sn-25g7sm76.googlevideo.com
 208.117.236.136    r3---sn-25g7sm76.googlevideo.com

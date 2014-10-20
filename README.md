@@ -107,7 +107,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 **\*nix/OSX 用户**
 
-0. 使用及更新: 打开终端运行`$ curl http://tx.txthinking.com/fuckGFW.py | sudo python`
+0. 使用及更新: 打开终端运行`$ curl -s http://tx.txthinking.com/fuckGFW.py | sudo python`
 
 必读技巧
 ---
