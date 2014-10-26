@@ -57,7 +57,9 @@ do
         ./use.sh *.ggpht.com $ip
     elif [ $domain = "*.googleapis.com" ]
     then
+        ./use.sh googleapis.com $ip
         ./use.sh talkgadget.google.com $ip
+        ./use.sh *.talkgadget.google.com $ip
     elif [ $domain = "*.appspot.com" ]
     then
         ./use.sh appspot.com $ip

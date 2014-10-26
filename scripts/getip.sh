@@ -6,9 +6,11 @@
 # Author: cloud@txthinking.com
 #
 
+# YouTube IP: http://compnetworking.about.com/od/traceipaddresses/f/youtube-ip-addr.htm
+
 function getip(){
     times=0;
-    until [ `echo $ip | grep -Pc "^(173|60|74)"` -eq 1 ]
+    until [ `echo $ip | grep -Pc "^(173|60|74|208|4)"` -eq 1 ]
     do
         ip=$(dig +tcp $1 @208.67.220.220 | grep -P 'IN\s+?A'| tail -1 | awk '{printf("%s", $5)}')
         times=$(($times+1))
