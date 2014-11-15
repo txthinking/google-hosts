@@ -28,7 +28,7 @@ echo -e "IP\tLOSS\tTIME\tSSL"
 for((i=0;i<255;i++))
 do
     ip=${1}.${i}
-    c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
+    c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
     if [ $c -ne 1 ]
     then
         echo -e "$ip\tNO\tNO\tNO"
