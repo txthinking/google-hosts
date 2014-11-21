@@ -36,7 +36,7 @@ do
     while read line
     do
         ip=$(echo $line | awk '{print $1}')
-        c=$(nmap --host-timeout 3s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
+        c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
         if [ $c -ge 1 ]
         then
             echo $line
@@ -57,7 +57,9 @@ do
         ./use.sh *.ggpht.com $ip
     elif [ $domain = "*.googleapis.com" ]
     then
+        ./use.sh googleapis.com $ip
         ./use.sh talkgadget.google.com $ip
+        ./use.sh *.talkgadget.google.com $ip
     elif [ $domain = "*.appspot.com" ]
     then
         ./use.sh appspot.com $ip
