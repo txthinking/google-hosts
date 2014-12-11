@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Thu Dec 11 03:27:09 UTC 2014
+# UPDATE: Thu Dec 11 10:24:38 UTC 2014
 #
 127.0.0.1    localhost
 173.194.120.71    0.docs.google.com
@@ -1912,6 +1912,7 @@
 173.194.120.71    g.cn
 173.194.120.71    www.g.cn
 173.194.120.71    maps.google.cn
+173.194.120.71    accounts.google.cn
 173.194.120.71    clients1.google.com.hk
 173.194.120.71    accounts.google.com.hk
 173.194.120.71    blogsearch.google.com.hk
