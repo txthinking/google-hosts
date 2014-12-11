@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Thu Dec 11 10:24:38 UTC 2014
+# UPDATE: Thu Dec 11 10:40:27 UTC 2014
 #
 127.0.0.1    localhost
 173.194.120.71    0.docs.google.com
@@ -39,6 +39,7 @@
 173.194.120.71    9.docs.google.com
 173.194.120.71    9.drive.google.com
 173.194.120.71    admin.google.com
+173.194.120.71    ads.google.com
 173.194.120.71    answers.google.com
 173.194.120.71    appengine.google.com
 173.194.120.71    apps.google.com
