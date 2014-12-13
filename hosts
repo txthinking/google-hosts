@@ -1,7 +1,11 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
+<<<<<<< HEAD
+# UPDATE: Thu Nov  6 05:43:26 UTC 2014
+=======
 # UPDATE: Thu Dec 11 10:40:27 UTC 2014
+>>>>>>> 0d4004013c81841cdf21f464b3d5abc17a3b27d2
 #
 127.0.0.1    localhost
 173.194.120.71    0.docs.google.com
