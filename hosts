@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 17 09:20:34 UTC 2014
+# UPDATE: Wed Dec 17 09:26:25 UTC 2014
 #
 127.0.0.1    localhost
 74.125.31.134    0.docs.google.com
@@ -302,7 +302,7 @@
 74.125.31.134    28.client-channel.google.com
 74.125.31.134    29.client-channel.google.com
 74.125.31.134    android.clients.google.com
-74.125.31.134    www.google.com
+74.125.69.105    www.google.com
 74.125.31.134    accounts.l.google.com
 74.125.31.134    checkout.l.google.com
 74.125.31.134    sandbox.google.com
