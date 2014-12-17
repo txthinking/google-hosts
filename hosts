@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 17 09:55:10 UTC 2014
+# UPDATE: Wed Dec 17 10:47:41 UTC 2014
 #
 127.0.0.1    localhost
 74.125.25.114    0.docs.google.com
@@ -1893,49 +1893,6 @@
 208.117.255.183    r18---sn-vgqsem7l.c.youtube.com
 208.117.255.184    r19---sn-vgqsem7l.c.youtube.com
 208.117.255.185    r20---sn-vgqsem7l.c.youtube.com
-
-74.125.31.134    blogsearch.google.cn
-74.125.31.134    ditu.google.cn
-74.125.31.134    gg.google.cn
-74.125.31.134    id.google.cn
-74.125.31.134    maps.gstatic.cn
-74.125.31.134    m.google.cn
-74.125.31.134    mt.google.cn
-74.125.31.134    mt0.google.cn
-74.125.31.134    mt1.google.cn
-74.125.31.134    mt2.google.cn
-74.125.31.134    mt3.google.cn
-74.125.31.134    news.google.cn
-74.125.31.134    scholar.google.cn
-74.125.31.134    translate.google.cn
-74.125.31.134    www.google.cn
-74.125.31.134    www.gstatic.cn
-74.125.31.134    g.cn
-74.125.31.134    www.g.cn
-74.125.31.134    maps.google.cn
-74.125.31.134    accounts.google.cn
-74.125.31.134    clients1.google.com.hk
-74.125.31.134    accounts.google.com.hk
-74.125.31.134    blogsearch.google.com.hk
-74.125.31.134    books.google.com.hk
-74.125.31.134    desktop.google.com.hk
-74.125.31.134    encrypted.google.com.hk
-74.125.31.134    groups.google.com.hk
-74.125.31.134    gxc.google.com.hk
-74.125.31.134    id.google.com.hk
-74.125.31.134    images.google.com.hk
-74.125.31.134    m.google.com.hk
-74.125.31.134    maps.google.com.hk
-74.125.31.134    news.google.com.hk
-74.125.31.134    picasaweb.google.com.hk
-74.125.31.134    plus.url.google.com.hk
-74.125.31.134    scholar.google.com.hk
-74.125.31.134    toolbar.google.com.hk
-74.125.31.134    toolbarqueries.google.com.hk
-74.125.31.134    translate.google.com.hk
-74.125.31.134    translate.google.com.hk
-74.125.31.134    wenda.google.com.hk
-74.125.31.134    www.google.com.hk
 
 74.125.31.134    accounts.youtube.com
 74.125.31.134    s.youtube.com
