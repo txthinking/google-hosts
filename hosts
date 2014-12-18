@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Dec 17 10:47:41 UTC 2014
+# UPDATE: Thu Dec 18 03:33:51 UTC 2014
 #
 127.0.0.1    localhost
 74.125.25.114    0.docs.google.com
@@ -756,6 +756,7 @@
 74.125.70.141    lfe-alpo-gm.appspot.com
 74.125.70.141    m-dot-betaspike.appspot.com
 74.125.70.141    r2303.latest.project-slingshot-hr.appspot.com
+74.125.70.141    romerestclient.appspot.com 
 
 74.125.202.82    autoproxy-gfwlist.googlecode.com
 74.125.202.82    chromium.googlecode.com
