@@ -66,7 +66,7 @@ do
     elif [ $domain = "*.google.com" ]
     then
         ./use.sh google.com $ip
-        for host in $(grep -P -A 9999 "cn$" hosts.all | awk '{print $2}')
+        for host in $(grep -P -A 9999 "OTHERS$" hosts.all | awk '{print $2}')
         do
             ./use.sh $host $ip
         done
