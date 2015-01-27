@@ -1,5 +1,8 @@
 google-hosts
 ============
+
+**Notice: 请2014-12-20之前下载的exe文件重新下载一次exe文件**
+
 [**授人以渔**][L0] | [**授人以鱼**][L1] | [**必读技巧**][L2]
 
 为什么有这个项目
@@ -108,7 +111,7 @@ $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
 
 **\*nix/OSX 用户**
 
-0. 使用及更新: 打开终端运行`$ curl -s http://tx.txthinking.com/fuckGFW.py | sudo python`
+0. 使用及更新: 打开终端运行`$ curl -s http://freedom.txthinking.com/fuckGFW.py | sudo python`
 
 必读技巧
 ---
@@ -127,9 +130,9 @@ License
 
 Licensed under The [MIT][MIT] License
 
-[hosts]: http://tx.txthinking.com/hosts
-[fuckGFW-64.exe]: http://tx.txthinking.com/fuckGFW-64.exe
-[fuckGFW-32.exe]: http://tx.txthinking.com/fuckGFW-32.exe
+[hosts]: http://freedom.txthinking.com/hosts
+[fuckGFW-64.exe]: http://freedom.txthinking.com/fuckGFW-64.exe
+[fuckGFW-32.exe]: http://freedom.txthinking.com/fuckGFW-32.exe
 [smarthosts]: https://code.google.com/p/smarthosts/
 [ipv6-hosts]: https://code.google.com/p/ipv6-hosts/
 [L0]: #%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%89%BEip
