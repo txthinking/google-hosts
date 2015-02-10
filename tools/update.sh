@@ -1,8 +1,9 @@
 #!/bin/bash
-cd ../
-cd scripts
+cd ../scripts
 ./select.sh
 ./apply.sh
+cd ../tools/
+./dnsmasq.sh
 cd ../
 git add .
 git commit -m 'update hosts'
