@@ -3,8 +3,6 @@ google-hosts
 
 **Notice: 请2014-12-20之前下载的exe文件重新下载一次exe文件**
 
-[**授人以渔**][L0] | [**授人以鱼**][L1] | [**必读技巧**][L2]
-
 为什么有这个项目
 ---
 
@@ -77,9 +75,7 @@ $ ./apply.sh
 
 ```
 $ cd google-hosts/scripts
-
-# 查询192.168.x.x,192.169.1.x, 并在查询完后自动选择最佳IP更新../hosts文件
-$ ./auto.sh 192.168 192.169.1
+$ ./auto.sh
 ```
 
 输出的四个字段含义
@@ -87,12 +83,6 @@ $ ./auto.sh 192.168 192.169.1
 | IP | LOSS | TIME | SSL |
 | --- | --- | --- | --- |
 | 此IP | 丢包率| PING值 | 可用ssl域名 |
-
-获取Google IP段可供参考
-
-```
-$ nslookup -q=TXT _netblocks.google.com 8.8.4.4
-```
 
 使用当前的[hosts][hosts]
 ---

@@ -5,18 +5,9 @@
 # Author: cloud@txthinking.com
 #
 
-if [ $# -eq 0 ]
-then
-    echo -e "Usage:\n"
-    echo -e "    $ ./auto.sh 192.168"
-    echo -e "    $ ./auto.sh 192.168.1"
-    echo -e "    $ ./auto.sh 192.168 192.169 192.170.1"
-    echo -e "\nView auto.sh file to see more.\n"
-fi
-
-for n
+for i in $(nslookup -q=TXT _netblocks.google.com 8.8.4.4 | grep -Po '\d+\.\d+\.\d+.\d+' | grep -Pv '8.8' | grep -Po '^\d+\.\d+')
 do
-    ./find.sh $n
+    ./find.sh $i
 done
 ./select.sh
 ./apply.sh
