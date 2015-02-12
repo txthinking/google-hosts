@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Thu Feb 12 06:07:15 UTC 2015
+# UPDATE: Thu Feb 12 08:18:29 UTC 2015
 #
 127.0.0.1    localhost
 74.125.224.5    0.docs.google.com
@@ -769,6 +769,7 @@
 173.194.194.82    imoutohost.googlecode.com
 173.194.194.82    huhamhire-hosts.googlecode.com
 173.194.194.82    haoutil.googlecode.com
+173.194.194.82    cocos2d-iphone.googlecode.com
 
 173.194.12.166    r1---sn-a5m7znee.c.android.clients.google.com
 173.194.12.167    r2---sn-a5m7znee.c.android.clients.google.com
