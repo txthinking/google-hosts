@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Wed Feb 11 19:18:38 UTC 2015
+# UPDATE: Thu Feb 12 06:07:15 UTC 2015
 #
 127.0.0.1    localhost
 74.125.224.5    0.docs.google.com
@@ -1921,6 +1921,7 @@
 74.125.224.5    kernel.googlesource.com
 74.125.224.5    gwt.googlesource.com
 74.125.224.5    www.googlesource.com
+74.125.224.5    go.googlesource.com
 
 74.125.224.5    google-opensource.blogspot.com
 74.125.224.5    googleblog.blogspot.com
