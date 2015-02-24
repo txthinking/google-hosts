@@ -1,9 +1,14 @@
 google-hosts
 ============
 
-[How](#How) | [Must](#Must) | [Donate](#Donate)
+[**What**](#what) | [**How**](#how) | [**Must**](#must) | [**Contributing**](#contributing) | [**License**](#license) | [**Donate**](#donate)
 
-**Notice: 每天2:00点自动更新**
+**Notice**: *每天2:00点自动更新*
+
+What
+---
+
+此项目能有助于你访问Google服务
 
 How
 ---
