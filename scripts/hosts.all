@@ -765,7 +765,6 @@
 64.233.176.82    haoutil.googlecode.com
 64.233.176.82    cocos2d-iphone.googlecode.com
 64.233.176.82    europa-pso.googlecode.com
->>>>>>> develop
 
 64.233.183.125    r1---sn-a5m7znee.c.android.clients.google.com
 64.233.183.125    r2---sn-a5m7znee.c.android.clients.google.com
@@ -1893,95 +1892,6 @@
 208.117.255.185    r20---sn-vgqsem7l.c.youtube.com
 
 #OTHERS
-<<<<<<< HEAD
-173.194.117.227    accounts.youtube.com
-173.194.117.227    s.youtube.com
-173.194.117.227    apiblog.youtube.com
-173.194.117.227    help.youtube.com
-173.194.117.227    insight.youtube.com
-173.194.117.227    m.youtube.com
-173.194.117.227    www.youtube.com
-173.194.117.227    uploads.stage.gdata.youtube.com
-173.194.117.227    i.ytimg.com
-173.194.117.227    i1.ytimg.com
-173.194.117.227    i2.ytimg.com
-173.194.117.227    i3.ytimg.com
-173.194.117.227    i4.ytimg.com
-173.194.117.227    s.ytimg.com
-173.194.117.227    upload.youtube.com
-173.194.117.227    manifest.googlevideo.com
-173.194.117.227    redirector.googlevideo.com
-
-173.194.117.227    googlesource.com
-173.194.117.227    android.googlesource.com
-173.194.117.227    gerrit.googlesource.com
-173.194.117.227    chromium.googlesource.com
-173.194.117.227    kernel.googlesource.com
-173.194.117.227    gwt.googlesource.com
-173.194.117.227    www.googlesource.com
-173.194.117.227    go.googlesource.com
-
-173.194.117.227    google-opensource.blogspot.com
-173.194.117.227    googleblog.blogspot.com
-173.194.117.227    googlechinablog.blogspot.com
-173.194.117.227    googlechromereleases.blogspot.com
-173.194.117.227    magnifier.blogspot.com
-173.194.117.227    1.bp.blogspot.com
-173.194.117.227    2.bp.blogspot.com
-173.194.117.227    3.bp.blogspot.com
-173.194.117.227    4.bp.blogspot.com
-
-173.194.117.227    golang.org
-173.194.117.227    blog.golang.org
-173.194.117.227    tip.golang.org
-173.194.117.227    play.golang.org
-173.194.117.227    tour.golang.org
-
-173.194.117.227    base0.googlehosted.com
-173.194.117.227    base1.googlehosted.com
-173.194.117.227    base2.googlehosted.com
-173.194.117.227    base3.googlehosted.com
-173.194.117.227    base4.googlehosted.com
-173.194.117.227    base5.googlehosted.com
-
-173.194.117.227    auth.keyhole.com
-173.194.117.227    chrome.angrybirds.com
-173.194.117.227    developer.android.com
-173.194.117.227    source.android.com
-173.194.117.227    domains.googlesyndication.com
-173.194.117.227    earthengine.googlelabs.com
-173.194.117.227    feeds.feedburner.com
-173.194.117.227    g.co
-173.194.117.227    goo.gl
-173.194.117.227    listen.googlelabs.com
-173.194.117.227    m.googlemail.com
-173.194.117.227    market.android.com
-173.194.117.227    ngrams.googlelabs.com
-173.194.117.227    www.googleadservices.com
-173.194.117.227    www.googlelabs.com
-173.194.117.227    www.orkut.com
-173.194.117.227    www.blogger.com
-173.194.117.227    accounts.blogger.com
-173.194.117.227    www.panoramio.com
-173.194.117.227    panoramio.com
-173.194.117.227    static.panoramio.com
-173.194.117.227    tpc.googlesyndication.com
-173.194.126.136    uberproxy.corp.google.com
-173.194.117.227    developer.chrome.com
-216.58.192.8    ssl.google-analytics.com
-216.58.192.8    www.google-analytics.com
-173.194.117.227    www.gmail.com
-173.194.117.227    proxy.googlezip.net
-173.194.117.227    googledrive.com
-173.194.117.227    www.gwtproject.org
-173.194.117.227    www.chromium.org
-173.194.117.227    chromium.org
-173.194.117.227    codereview.chromium.org
-173.194.117.227    dev.chromium.org
-173.194.117.227    gmail.com
-173.194.117.227    m.gmail.com
-173.194.117.227    www.webmproject.org
-=======
 64.233.183.125    accounts.youtube.com
 64.233.183.125    s.youtube.com
 64.233.183.125    apiblog.youtube.com
