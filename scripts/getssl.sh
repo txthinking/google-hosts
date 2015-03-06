@@ -23,8 +23,7 @@ then
     mkdir output
 fi
 
-max_process=100
-
+max_process=99
 fd=/tmp/google-hosts.fd
 mkfifo $fd
 exec 9<>$fd
@@ -36,7 +35,6 @@ done >&9
 
 output=output/$1.x
 > $output
-echo -e "IP\tLOSS\tTIME\tSSL"
 for((i=0;i<255;i++))
 do
     {
@@ -48,6 +46,7 @@ do
             then
                 echo -e "$ip\tNO\tNO\tNO"
                 echo -e "$ip\tNO\tNO\tNO" >> $output
+                echo >&9
                 continue
             fi
             cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
@@ -55,6 +54,7 @@ do
             then
                 echo -e "$ip\tNO\tNO\tNO"
                 echo -e "$ip\tNO\tNO\tNO" >> $output
+                echo >&9
                 continue
             fi
             ping=/tmp/ping-$ip
@@ -65,6 +65,7 @@ do
             then
                 echo -e "$ip\t$loss\tNO\t$cer"
                 echo -e "$ip\t$loss\tNO\t$cer" >> $output
+                echo >&9
                 continue
             fi
             avgtime=$(grep -P "time=" $ping | awk '{print $7}' | awk 'BEGIN {FS="=";s=0;c=0;}{s+=$2;c++;} END {print s/c}')
@@ -78,4 +79,3 @@ wait
 exec 9>&-
 
 sort -k4 -k2n -k3n $output -o $output
-echo "[INFO] Done in $output"
