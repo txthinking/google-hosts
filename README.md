@@ -118,7 +118,8 @@ Licensed under The [MIT][MIT] License
 Donate
 ---
 
-Alipay/Paypal: `cloud@txthinking.com`
+* Alipay/Paypal: `cloud@txthinking.com`
+* Bitcoin: `17PCWDxxJ1wmNb9YmRrTJTXd4dvcJvWPVN`
 
 [hosts]: http://freedom.txthinking.com/hosts
 [fuckGFW-64.exe]: http://freedom.txthinking.com/fuckGFW-64.exe
