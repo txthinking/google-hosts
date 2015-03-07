@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Sat Mar  7 04:07:51 UTC 2015
+# UPDATE: Sat Mar  7 04:22:36 UTC 2015
 #
 127.0.0.1    localhost
 216.58.217.212    0.docs.google.com
@@ -376,9 +376,9 @@
 216.58.217.212    plusone.google.com
 
 216.58.216.37    mail.google.com
-216.58.216.167    filetransferenabled.mail.google.com
-216.58.216.167    chatenabled.mail.google.com
-216.58.216.167    isolated.mail.google.com
+173.194.117.253    filetransferenabled.mail.google.com
+173.194.117.253    chatenabled.mail.google.com
+173.194.117.253    isolated.mail.google.com
 
 216.58.217.212    apis.google.com
 216.58.217.212    clients6.google.com
@@ -660,42 +660,42 @@
 173.194.79.197    geo5.ggpht.com
 173.194.79.197    geo6.ggpht.com
 
-173.194.196.120    csi.gstatic.com
-173.194.196.120    g0.gstatic.com
-173.194.196.120    g1.gstatic.com
-173.194.196.120    g2.gstatic.com
-173.194.196.120    g3.gstatic.com
-173.194.196.120    maps.gstatic.com
-173.194.196.120    mt0.gstatic.com
-173.194.196.120    mt1.gstatic.com
-173.194.196.120    mt2.gstatic.com
-173.194.196.120    mt3.gstatic.com
-173.194.196.120    mt4.gstatic.com
-173.194.196.120    mt5.gstatic.com
-173.194.196.120    mt6.gstatic.com
-173.194.196.120    mt7.gstatic.com
-173.194.196.120    ssl.gstatic.com
-173.194.196.120    t0.gstatic.com
-173.194.196.120    t1.gstatic.com
-173.194.196.120    t2.gstatic.com
-173.194.196.120    t3.gstatic.com
-173.194.196.120    www.gstatic.com
-173.194.196.120    fonts.gstatic.com
-173.194.196.120    encrypted-tbn0.gstatic.com
-173.194.196.120    encrypted-tbn1.gstatic.com
-173.194.196.120    encrypted-tbn2.gstatic.com
-173.194.196.120    encrypted-tbn3.gstatic.com
-173.194.196.120    encrypted-tbn4.gstatic.com
-173.194.196.120    encrypted-tbn5.gstatic.com
-173.194.196.120    encrypted-tbn6.gstatic.com
-173.194.196.120    g4.gstatic.com
-173.194.196.120    g5.gstatic.com
-173.194.196.120    g6.gstatic.com
-173.194.196.120    g7.gstatic.com
-173.194.196.120    t4.gstatic.com
-173.194.196.120    t5.gstatic.com
-173.194.196.120    t6.gstatic.com
-173.194.196.120    t7.gstatic.com
+74.125.129.120    csi.gstatic.com
+74.125.129.120    g0.gstatic.com
+74.125.129.120    g1.gstatic.com
+74.125.129.120    g2.gstatic.com
+74.125.129.120    g3.gstatic.com
+74.125.129.120    maps.gstatic.com
+74.125.129.120    mt0.gstatic.com
+74.125.129.120    mt1.gstatic.com
+74.125.129.120    mt2.gstatic.com
+74.125.129.120    mt3.gstatic.com
+74.125.129.120    mt4.gstatic.com
+74.125.129.120    mt5.gstatic.com
+74.125.129.120    mt6.gstatic.com
+74.125.129.120    mt7.gstatic.com
+74.125.129.120    ssl.gstatic.com
+74.125.129.120    t0.gstatic.com
+74.125.129.120    t1.gstatic.com
+74.125.129.120    t2.gstatic.com
+74.125.129.120    t3.gstatic.com
+74.125.129.120    www.gstatic.com
+74.125.129.120    fonts.gstatic.com
+74.125.129.120    encrypted-tbn0.gstatic.com
+74.125.129.120    encrypted-tbn1.gstatic.com
+74.125.129.120    encrypted-tbn2.gstatic.com
+74.125.129.120    encrypted-tbn3.gstatic.com
+74.125.129.120    encrypted-tbn4.gstatic.com
+74.125.129.120    encrypted-tbn5.gstatic.com
+74.125.129.120    encrypted-tbn6.gstatic.com
+74.125.129.120    g4.gstatic.com
+74.125.129.120    g5.gstatic.com
+74.125.129.120    g6.gstatic.com
+74.125.129.120    g7.gstatic.com
+74.125.129.120    t4.gstatic.com
+74.125.129.120    t5.gstatic.com
+74.125.129.120    t6.gstatic.com
+74.125.129.120    t7.gstatic.com
 
 216.58.216.138    googleapis.com
 216.58.216.138    ajax.googleapis.com
@@ -771,6 +771,7 @@
 64.233.177.82    haoutil.googlecode.com
 64.233.177.82    cocos2d-iphone.googlecode.com
 64.233.177.82    europa-pso.googlecode.com
+64.233.177.82    vim.googlecode.com
 
 216.58.221.168    www.google-analytics.com
 216.58.221.168    ssl.google-analytics.com
