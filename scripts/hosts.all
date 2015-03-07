@@ -766,6 +766,9 @@
 64.233.177.82    cocos2d-iphone.googlecode.com
 64.233.177.82    europa-pso.googlecode.com
 
+216.58.221.168    www.google-analytics.com
+216.58.221.168    ssl.google-analytics.com
+
 216.58.217.212    r1---sn-a5m7znee.c.android.clients.google.com
 216.58.217.212    r2---sn-a5m7znee.c.android.clients.google.com
 216.58.217.212    r3---sn-a5m7znee.c.android.clients.google.com
@@ -1966,8 +1969,6 @@
 216.58.217.212    tpc.googlesyndication.com
 216.58.217.212    uberproxy.corp.google.com
 216.58.217.212    developer.chrome.com
-216.58.221.168    ssl.google-analytics.com
-216.58.221.168    www.google-analytics.com
 216.58.217.212    www.gmail.com
 216.58.217.212    proxy.googlezip.net
 216.58.217.212    googledrive.com
