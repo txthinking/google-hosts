@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Mon Mar 23 02:36:23 UTC 2015
+# UPDATE: Mon Mar 23 18:00:45 UTC 2015
 #
 127.0.0.1    localhost
 216.58.217.218    0.docs.google.com
@@ -382,12 +382,12 @@
 
 216.58.217.218    apis.google.com
 216.58.217.218    clients6.google.com
-64.233.191.95    talkgadget.google.com
+173.194.219.95    talkgadget.google.com
 
-64.233.191.95    0.talkgadget.google.com
-64.233.191.95    chromoting-oauth.talkgadget.google.com
-64.233.191.95    chromoting-host.talkgadget.google.com
-64.233.191.95    chromoting-client.talkgadget.google.com
+173.194.219.95    0.talkgadget.google.com
+173.194.219.95    chromoting-oauth.talkgadget.google.com
+173.194.219.95    chromoting-host.talkgadget.google.com
+173.194.219.95    chromoting-client.talkgadget.google.com
 
 216.58.219.1    0-open-opensocial.googleusercontent.com
 216.58.219.1    0-focus-opensocial.googleusercontent.com
@@ -697,36 +697,36 @@
 173.194.192.120    t6.gstatic.com
 173.194.192.120    t7.gstatic.com
 
-64.233.191.95    googleapis.com
-64.233.191.95    ajax.googleapis.com
-64.233.191.95    chart.googleapis.com
-64.233.191.95    fonts.googleapis.com
-64.233.191.95    maps.googleapis.com
-64.233.191.95    mt0.googleapis.com
-64.233.191.95    mt1.googleapis.com
-64.233.191.95    mt2.googleapis.com
-64.233.191.95    mt3.googleapis.com
-64.233.191.95    mts0.googleapis.com
-64.233.191.95    mts1.googleapis.com
-64.233.191.95    mts2.googleapis.com
-64.233.191.95    mts3.googleapis.com
-64.233.191.95    redirector-bigcache.googleapis.com
-64.233.191.95    bigcache.googleapis.com
-64.233.191.95    translate.googleapis.com
-64.233.191.95    www.googleapis.com
-64.233.191.95    content.googleapis.com
-64.233.191.95    commondatastorage.googleapis.com
-64.233.191.95    storage.googleapis.com
-64.233.191.95    android.googleapis.com
-64.233.191.95    play.googleapis.com
-64.233.191.95    doc-0a9v4-0agdq-s-googleusercontent.commondatastorage.googleapis.com
-64.233.191.95    static.panoramio.com.storage.googleapis.com
-64.233.191.95    mts0.googleapis.com
-64.233.191.95    mts1.googleapis.com
-64.233.191.95    mts2.googleapis.com
-64.233.191.95    mts3.googleapis.com
-64.233.191.95    plus.googleapis.com
-64.233.191.95    youtube.googleapis.com
+173.194.219.95    googleapis.com
+173.194.219.95    ajax.googleapis.com
+173.194.219.95    chart.googleapis.com
+173.194.219.95    fonts.googleapis.com
+173.194.219.95    maps.googleapis.com
+173.194.219.95    mt0.googleapis.com
+173.194.219.95    mt1.googleapis.com
+173.194.219.95    mt2.googleapis.com
+173.194.219.95    mt3.googleapis.com
+173.194.219.95    mts0.googleapis.com
+173.194.219.95    mts1.googleapis.com
+173.194.219.95    mts2.googleapis.com
+173.194.219.95    mts3.googleapis.com
+173.194.219.95    redirector-bigcache.googleapis.com
+173.194.219.95    bigcache.googleapis.com
+173.194.219.95    translate.googleapis.com
+173.194.219.95    www.googleapis.com
+173.194.219.95    content.googleapis.com
+173.194.219.95    commondatastorage.googleapis.com
+173.194.219.95    storage.googleapis.com
+173.194.219.95    android.googleapis.com
+173.194.219.95    play.googleapis.com
+173.194.219.95    doc-0a9v4-0agdq-s-googleusercontent.commondatastorage.googleapis.com
+173.194.219.95    static.panoramio.com.storage.googleapis.com
+173.194.219.95    mts0.googleapis.com
+173.194.219.95    mts1.googleapis.com
+173.194.219.95    mts2.googleapis.com
+173.194.219.95    mts3.googleapis.com
+173.194.219.95    plus.googleapis.com
+173.194.219.95    youtube.googleapis.com
 
 173.194.197.141    appspot.com
 173.194.197.141    chrometophone.appspot.com
@@ -758,20 +758,20 @@
 173.194.197.141    r2303.latest.project-slingshot-hr.appspot.com
 173.194.197.141    chromerestclient.appspot.com
 
-173.194.216.82    autoproxy-gfwlist.googlecode.com
-173.194.216.82    chromium.googlecode.com
-173.194.216.82    closure-library.googlecode.com
-173.194.216.82    earth-api-samples.googlecode.com
-173.194.216.82    gmaps-samples-flash.googlecode.com
-173.194.216.82    google-code-feed-gadget.googlecode.com
-173.194.216.82    smarthosts.googlecode.com
-173.194.216.82    goagent.googlecode.com
-173.194.216.82    imoutohost.googlecode.com
-173.194.216.82    huhamhire-hosts.googlecode.com
-173.194.216.82    haoutil.googlecode.com
-173.194.216.82    cocos2d-iphone.googlecode.com
-173.194.216.82    europa-pso.googlecode.com
-173.194.216.82    vim.googlecode.com
+173.194.73.82    autoproxy-gfwlist.googlecode.com
+173.194.73.82    chromium.googlecode.com
+173.194.73.82    closure-library.googlecode.com
+173.194.73.82    earth-api-samples.googlecode.com
+173.194.73.82    gmaps-samples-flash.googlecode.com
+173.194.73.82    google-code-feed-gadget.googlecode.com
+173.194.73.82    smarthosts.googlecode.com
+173.194.73.82    goagent.googlecode.com
+173.194.73.82    imoutohost.googlecode.com
+173.194.73.82    huhamhire-hosts.googlecode.com
+173.194.73.82    haoutil.googlecode.com
+173.194.73.82    cocos2d-iphone.googlecode.com
+173.194.73.82    europa-pso.googlecode.com
+173.194.73.82    vim.googlecode.com
 
 173.194.197.97    www.google-analytics.com
 173.194.197.97    ssl.google-analytics.com
