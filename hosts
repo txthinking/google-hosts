@@ -1,7 +1,7 @@
 #
 # link: https://github.com/txthinking/google-hosts
 #
-# UPDATE: Sun Mar 22 18:00:27 UTC 2015
+# UPDATE: Mon Mar 23 02:36:23 UTC 2015
 #
 127.0.0.1    localhost
 216.58.217.218    0.docs.google.com
@@ -773,8 +773,8 @@
 173.194.216.82    europa-pso.googlecode.com
 173.194.216.82    vim.googlecode.com
 
-173.194.33.158    www.google-analytics.com
-173.194.33.158    ssl.google-analytics.com
+173.194.197.97    www.google-analytics.com
+173.194.197.97    ssl.google-analytics.com
 
 216.58.217.218    r1---sn-a5m7znee.c.android.clients.google.com
 216.58.217.218    r2---sn-a5m7znee.c.android.clients.google.com
