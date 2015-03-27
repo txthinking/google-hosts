@@ -38,14 +38,26 @@ do
     do
         ip=$(echo $line | awk '{print $1}')
         c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
-        if [ $c -ge 1 ]
+        if [ $c -ne 1 ]
         then
-            echo $line
-            break
+            echo "NMAP warn $domain $ip"
+            continue
         fi
+        cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+        if [ $cer != $domain ]
+        then
+            echo "CURL warn $domain $ip"
+            continue
+        fi
+        _ip=$ip
     done < $filter_data
 
     if [ -z "$line" ]
+    then
+        echo "[WARNING] $domain"
+        continue
+    fi
+    if [ -z "$_ip" ]
     then
         echo "[WARNING] $domain"
         continue
