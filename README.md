@@ -101,6 +101,7 @@ $ ./auto.sh
 Must
 ---
 
+* 请使用境外DNS. 建议google dns + opendns一起用
 * 请使用国际版google. 防止google本地化重定向: 访问一下<https://www.google.com/ncr>
 * 请使用`https`替代`http`访问.
 
