@@ -115,7 +115,7 @@ Donate
 
 * Alipay/Paypal: `cloud@txthinking.com`
 * Bitcoin: `17PCWDxxJ1wmNb9YmRrTJTXd4dvcJvWPVN`
-[Donors][Donors]
+* [Donors][Donors]
 
 [hosts]: http://freedom.txthinking.com/hosts
 [fuckGFW-64.exe]: http://freedom.txthinking.com/fuckGFW-64.exe
