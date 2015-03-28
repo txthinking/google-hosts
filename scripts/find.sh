@@ -25,7 +25,7 @@ last=$(./iprange_64 $1 | awk '{print $2}')
 output=output/$first-$last
 > $output
 
-max_process=99
+max_process=100
 fd=/tmp/google-hosts.fd
 mkfifo $fd
 exec 9<>$fd
@@ -35,6 +35,7 @@ do
     echo
 done >&9
 
+n=0
 for((i=$first;i<$last;i++))
 do
     {
@@ -47,6 +48,11 @@ do
             echo >&9
         }
     }&
+    n=$(($n+1))
+    if [ $(($n%$(($max_process*2)))) -eq 0 ]
+    then
+        wait
+    fi
 done
 wait
 exec 9>&-
