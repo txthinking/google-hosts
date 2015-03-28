@@ -61,6 +61,8 @@ do
         echo "[WARNING] $domain"
         continue
     fi
+
+    echo $line
     ./use.sh $domain $ip
 
     if [ $domain != "*.mail.google.com" ]
