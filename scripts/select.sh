@@ -40,16 +40,15 @@ do
         c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
         if [ $c -ne 1 ]
         then
-            echo "NMAP warn $domain $ip"
             continue
         fi
         cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
         if [ $cer != $domain ]
         then
-            echo "CURL warn $domain $ip"
             continue
         fi
         _ip=$ip
+        break
     done < $filter_data
 
     if [ -z "$line" ]
