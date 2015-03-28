@@ -5,7 +5,7 @@
 # Author: cloud@txthinking.com
 #
 
-for i in $(nslookup -q=TXT _netblocks.google.com 8.8.4.4 | grep -Po '\d+\.\d+\.\d+.\d+' | grep -Pv '8.8' | grep -Po '^\d+\.\d+')
+for i in $(nslookup -q=TXT _netblocks.google.com 8.8.4.4 | grep -Po '\d+\.\d+\.\d+.\d+\/\d+')
 do
     ./find.sh $i
 done
