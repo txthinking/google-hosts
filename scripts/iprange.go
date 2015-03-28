@@ -1,3 +1,8 @@
+//
+// get ip range from CIDR
+// Author: cloud@txthinking.com
+//
+
 package main
 
 import (

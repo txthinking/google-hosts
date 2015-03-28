@@ -32,19 +32,13 @@ How
 
 ### 自己查找hosts
 
-**`find.sh`查询某段IP详细信息,可接受一个或多个参数(这个可检测IP是否被封锁, 443端口是否被封锁)**
+**`find.sh`查询某段IP详细信息**
 
 ```
 $ cd google-hosts/scripts
 
-# 查询 192.168.1.x
-$ ./find.sh 192.168.1
-
-# 查询 192.168.x.x
-$ ./find.sh 192.168
-
-# 查询 192.168.x.x, 192.169.x.x, 192.170.1.x
-$ ./find.sh 192.168 192.169 192.170.1
+# 查询 192.168.1.1/24
+$ ./find.sh 192.168.1.1/24
 ```
 
 **`filter.sh`从output目录(由find.sh生成)过滤域名**
@@ -121,8 +115,10 @@ Donate
 
 * Alipay/Paypal: `cloud@txthinking.com`
 * Bitcoin: `17PCWDxxJ1wmNb9YmRrTJTXd4dvcJvWPVN`
+[Donors][Donors]
 
 [hosts]: http://freedom.txthinking.com/hosts
 [fuckGFW-64.exe]: http://freedom.txthinking.com/fuckGFW-64.exe
 [fuckGFW-32.exe]: http://freedom.txthinking.com/fuckGFW-32.exe
 [MIT]: https://github.com/txthinking/google-hosts/blob/master/LICENSE
+[Donors]: https://github.com/txthinking/google-hosts/blob/master/DONORS.md

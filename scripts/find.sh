@@ -42,8 +42,8 @@ do
         {
             ip=$(./d2ip_64 $i)
             out=$(./getssl.sh $ip)
-            echo $out
-            echo $out >> $output
+            echo -e "$out"
+            echo -e "$out" >> $output
             echo >&9
         }
     }&
