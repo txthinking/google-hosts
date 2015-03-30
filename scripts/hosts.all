@@ -370,9 +370,9 @@
 216.58.192.31    plusone.google.com
 
 173.194.203.18    mail.google.com
-173.194.203.189    filetransferenabled.mail.google.com
-173.194.203.189    chatenabled.mail.google.com
-173.194.203.189    isolated.mail.google.com
+74.125.239.125    filetransferenabled.mail.google.com
+74.125.239.125    chatenabled.mail.google.com
+74.125.239.125    isolated.mail.google.com
 
 216.58.192.31    apis.google.com
 216.58.192.31    clients6.google.com
@@ -784,8 +784,8 @@
 173.194.203.82    vim.googlecode.com
 >>>>>>> master
 
-173.194.38.222    www.google-analytics.com
-173.194.38.222    ssl.google-analytics.com
+173.194.77.97    www.google-analytics.com
+173.194.77.97    ssl.google-analytics.com
 
 216.58.192.31    r1---sn-a5m7znee.c.android.clients.google.com
 216.58.192.31    r2---sn-a5m7znee.c.android.clients.google.com
