@@ -20,8 +20,8 @@ then
     mkdir output
 fi
 
-first=$(./iprange_64 $1 | awk '{print $1}')
-last=$(./iprange_64 $1 | awk '{print $2}')
+first=$(./iprange_$(uname -m) $1 | awk '{print $1}')
+last=$(./iprange_$(uname -m) $1 | awk '{print $2}')
 output=output/$first-$last
 > $output
 
@@ -41,7 +41,7 @@ do
     {
         read -u9
         {
-            ip=$(./d2ip_64 $i)
+            ip=$(./d2ip_$(uname -m) $i)
             out=$(./getssl.sh $ip)
             echo -e "$out"
             echo -e "$out" >> $output
