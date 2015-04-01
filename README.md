@@ -3,7 +3,7 @@ google-hosts
 
 [**What**](#what) | [**How**](#how) | [**Must**](#must) | [**Contributing**](#contributing) | [**License**](#license) | [**Donate**](#donate)
 
-**Notice**: *每天2:00-3:00点自动更新*
+**Notice**: *每天2:00-3:00点自动更新(建议有条件的同学自己跑脚本)*
 
 What
 ---
