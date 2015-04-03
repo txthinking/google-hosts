@@ -43,7 +43,7 @@ do
             continue
         fi
         cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
-        if [ $cer != $domain ]
+        if [ "$cer" != $domain ]
         then
             continue
         fi
