@@ -86,7 +86,7 @@ Explanation of output
 Must
 ---
 
-* Uuse regular DNS. e.g: google dns + opendns
+* Use regular DNS. e.g: google dns + opendns
 * Use international google. Make google no country redirect: <https://www.google.com/ncr>
 * Use `https`
 
