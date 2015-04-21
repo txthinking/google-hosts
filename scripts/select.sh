@@ -34,9 +34,11 @@ filter_data=/tmp/filter.sh.data
 for domain in $domains
 do
     ./filter.sh $domain > $filter_data
+    _ip=""
+    line=""
     while read line
     do
-        ip=$(echo $line | awk '{print $1}')
+        ip=$(echo $line | awk '{print $5}')
         c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
         if [ $c -ne 1 ]
         then
@@ -49,12 +51,17 @@ do
         fi
         if [ $domain = "*.google.com" ]
         then
+            #c=$(echo $ip | grep -Pc "^(173|207|209|216|64|66|72|74)")
+            c=$(echo $ip | grep -Pc "^(173|207|209|64|66|72|74)")
+            if [ $c -ne 1 ]
+            then
+                continue
+            fi
             c=$(nmap --host-timeout 2s $ip -p 5222 2>/dev/null | grep -Pc "5222/tcp open")
             if [ $c -eq 1 ]
             then
                 continue
             fi
-            cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
         fi
         _ip=$ip
         break
