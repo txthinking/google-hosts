@@ -11,6 +11,8 @@ This projects can help you browse google service. (Only for research and study)
 How
 ---
 
+[Requirements][Requirements]
+
 **`getssl.sh` get IP detail**
 
 ```
@@ -106,8 +108,6 @@ Donate
 * Bitcoin: `17PCWDxxJ1wmNb9YmRrTJTXd4dvcJvWPVN`
 * [Donors][Donors]
 
-[hosts]: http://freedom.txthinking.com/hosts
-[fuckGFW-64.exe]: http://freedom.txthinking.com/fuckGFW-64.exe
-[fuckGFW-32.exe]: http://freedom.txthinking.com/fuckGFW-32.exe
+[Requirements]: https://github.com/txthinking/google-hosts/blob/master/scripts/README.md
 [MIT]: https://github.com/txthinking/google-hosts/blob/master/LICENSE
 [Donors]: https://github.com/txthinking/google-hosts/blob/master/DONORS.md
