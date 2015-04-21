@@ -38,7 +38,7 @@ do
     line=""
     while read line
     do
-        ip=$(echo $line | awk '{print $5}')
+        ip=$(echo $line | awk '{print $1}')
         c=$(nmap --host-timeout 2s $ip -p 443 2>/dev/null | grep -Pc "443/tcp open")
         if [ $c -ne 1 ]
         then
@@ -52,7 +52,7 @@ do
         if [ $domain = "*.google.com" ]
         then
             #c=$(echo $ip | grep -Pc "^(173|207|209|216|64|66|72|74)")
-            c=$(echo $ip | grep -Pc "^(173|207|209|64|66|72|74)")
+            c=$(echo $ip | grep -Pc "^(173|207|209|66|72|74)")
             if [ $c -ne 1 ]
             then
                 continue
