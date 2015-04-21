@@ -47,6 +47,15 @@ do
         then
             continue
         fi
+        if [ $domain = "*.google.com" ]
+        then
+            c=$(nmap --host-timeout 2s $ip -p 5222 2>/dev/null | grep -Pc "5222/tcp open")
+            if [ $c -eq 1 ]
+            then
+                continue
+            fi
+            cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+        fi
         _ip=$ip
         break
     done < $filter_data
