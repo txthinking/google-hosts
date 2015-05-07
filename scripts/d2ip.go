@@ -8,7 +8,7 @@ import (
     "os"
     "fmt"
     "strconv"
-    "bitbucket.org/txthinking/util"
+    "github.com/txthinking/ant"
 )
 
 func Usage(){
@@ -28,7 +28,7 @@ func main(){
     if err != nil{
         Usage()
     }
-    ip, err := util.Decimal2IP(d)
+    ip, err := ant.Decimal2IP(d)
     if err != nil{
         Usage()
     }

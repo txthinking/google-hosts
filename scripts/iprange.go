@@ -6,7 +6,7 @@
 package main
 
 import (
-    "bitbucket.org/txthinking/util"
+    "github.com/txthinking/ant"
     "os"
     "fmt"
 )
@@ -24,11 +24,11 @@ func main(){
     if len(os.Args) != 2{
         Usage()
     }
-    c, err := util.CIDR(os.Args[1])
+    c, err := ant.CIDR(os.Args[1])
     if err != nil{
         Usage()
     }
-    f, _ := util.IP2Decimal(c.First)
-    l, _ := util.IP2Decimal(c.Last)
+    f, _ := ant.IP2Decimal(c.First)
+    l, _ := ant.IP2Decimal(c.Last)
     fmt.Printf("%d\t%d\n", f, l)
 }
