@@ -13,6 +13,14 @@ How
 
 [Requirements][Requirements]
 
+#### Only one command
+
+```
+$ cd google-hosts/scripts && ./auto.sh
+```
+
+#### More
+
 **`getssl.sh` get IP detail**
 
 ```
