@@ -24,14 +24,19 @@ then
     echo -e "$ip\tNO\tNO\tNO"
     exit 0
 fi
-cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+if [ $(uname) = "Darwin" ]
+then
+    cer=$(wget https://$ip 2>&1 | grep "common name" | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+else
+    cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+fi
 if [ -z $cer ]
 then
     echo -e "$ip\tNO\tNO\tNO"
     exit 0
 fi
 ping=/tmp/ping-$ip
-ping -c 5 -w 5 $ip > $ping
+ping -c 5 -t 5 $ip > $ping
 loss=$(grep -Po "\w+%" $ping)
 c=$(grep -c "time=" $ping)
 if [ $c -eq 0 ]
