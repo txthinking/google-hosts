@@ -36,7 +36,12 @@ then
     exit 0
 fi
 ping=/tmp/ping-$ip
-ping -c 5 -t 5 $ip > $ping
+if [ $(uname) = "Darwin" ]
+then
+    ping -c 5 -t 5 $ip > $ping
+else
+    ping -c 5 -w 5 $ip > $ping
+fi
 loss=$(grep -Po "\w+%" $ping)
 c=$(grep -c "time=" $ping)
 if [ $c -eq 0 ]
