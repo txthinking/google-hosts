@@ -20,12 +20,16 @@ then
     mkdir output
 fi
 
-first=$(./iprange_$(uname -m) $1 | awk '{print $1}')
-last=$(./iprange_$(uname -m) $1 | awk '{print $2}')
+first=$(./iprange-$(uname)-$(uname -m) $1 | awk '{print $1}')
+last=$(./iprange-$(uname)-$(uname -m) $1 | awk '{print $2}')
 output=output/$first-$last
 > $output
 
-max_process=100
+max_process=99
+if [ $(uname) = "Darwin" ]
+then
+    max_process=54
+fi
 fd=/tmp/google-hosts.fd
 mkfifo $fd
 exec 9<>$fd
@@ -41,7 +45,7 @@ do
     {
         read -u9
         {
-            ip=$(./d2ip_$(uname -m) $i)
+            ip=$(./d2ip-$(uname)-$(uname -m) $i)
             out=$(./getssl.sh $ip)
             echo -e "$out"
             echo -e "$out" >> $output

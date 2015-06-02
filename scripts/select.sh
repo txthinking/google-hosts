@@ -44,7 +44,12 @@ do
         then
             continue
         fi
-        cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+        if [ $(uname) = "Darwin" ]
+        then
+            cer=$(wget https://$ip 2>&1 | grep "common name" | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+        else
+            cer=$(curl https://$ip 2>&1 | grep -Po "'\S*'" |head -1|cut -d \' -f 2)
+        fi
         if [ "$cer" != $domain ]
         then
             continue
