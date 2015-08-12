@@ -62,7 +62,7 @@ do
             then
                 continue
             fi
-            c=$(nmap --host-timeout 2s $ip -p 5222 2>/dev/null | grep -Pc "5222/tcp open")
+            c=$(nmap --host-timeout 9s $ip -p 5222 2>/dev/null | grep -Pc "5222/tcp open")
             if [ $c -eq 1 ]
             then
                 continue
