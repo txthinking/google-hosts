@@ -44,4 +44,4 @@ brew install wget
 brew install cmake bash-completion pcre openssl readline autoconf automake gcc nmap
 ```
 
-And [here](https://github.com/txthinking/dotfiles/blob/master/osxbash/.bash_profile#L2-8), and don't forget to run `$ source ~/.bash_profile`
+And [here](https://github.com/txthinking/dotfiles/blob/master/osxbash/.bash_profile#L2-L8), and don't forget to run `$ source ~/.bash_profile`
