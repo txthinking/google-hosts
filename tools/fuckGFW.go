@@ -18,7 +18,7 @@ import (
 
 const (
     SEARCH_STRING string = "#TX-HOSTS"
-    HOSTS_SOURCE string = "http://freedom.txthinking.com/hosts"
+    HOSTS_SOURCE string = "https://raw.githubusercontent.com/txthinking/google-hosts/master/hosts"
 )
 
 func Exit(message string){

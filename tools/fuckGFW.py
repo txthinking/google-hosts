@@ -12,7 +12,7 @@ import os
 import sys
 
 HOSTS_PATH = "/etc/hosts"
-HOSTS_SOURCE = "http://freedom.txthinking.com/hosts"
+HOSTS_SOURCE = "https://raw.githubusercontent.com/txthinking/google-hosts/master/hosts"
 SEARCH_STRING = "#TX-HOSTS"
 
 def GetRemoteHosts(url):
