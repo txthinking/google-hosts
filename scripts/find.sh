@@ -28,7 +28,7 @@ output=output/$first-$last
 max_process=99
 if [ $(uname) = "Darwin" ]
 then
-    max_process=54
+    max_process=33
 fi
 fd=/tmp/google-hosts.fd
 mkfifo $fd
