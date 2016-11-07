@@ -16,7 +16,7 @@ How
 #### Only one command
 
 ```
-$ cd google-hosts/scripts && ./auto.sh
+$ cd google-hosts/scripts && ./auto.sh # This may take a few hours.
 ```
 
 #### More
