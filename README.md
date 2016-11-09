@@ -6,20 +6,12 @@ google-hosts
 What
 ---
 
-This projects can help you browse google service. (Only for research and study)
+This project provides some tools to help you find google IP.
 
 How
 ---
 
 [Requirements][Requirements]
-
-#### Only one command
-
-```
-$ cd google-hosts/scripts && ./auto.sh # This may take a few hours.
-```
-
-#### More
 
 **`getssl.sh` get IP detail**
 
@@ -81,6 +73,8 @@ $ ./apply.sh
 **`auto.sh` find CIDR and run find.sh, select.sh, apply.sh**
 
 ```
+# This script find IP from $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
+# IP may be all dead, then you need find IP from other pool
 $ cd google-hosts/scripts
 $ ./auto.sh
 ```
@@ -94,7 +88,7 @@ Explanation of output
 Must
 ---
 
-* Use regular DNS. e.g: google dns + opendns
+* Use google dns / opendns / other
 * Use international google. Make google no country redirect: <https://www.google.com/ncr>
 * Use `https`
 
@@ -102,7 +96,6 @@ Contributing
 ---
 
 * vim:ts=4:sw=4:expandtab:ff=unix:encoding=utf8
-* Please create your pull request on `develop` branch
 
 License
 ---
