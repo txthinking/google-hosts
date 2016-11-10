@@ -70,13 +70,11 @@ $ cd google-hosts/scripts
 $ ./apply.sh
 ```
 
-**`auto.sh` find CIDR and run find.sh, select.sh, apply.sh**
+**`auto.sh` find CIDR from a DNS and run find.sh, select.sh, apply.sh**
 
 ```
-# This script find IP from $ nslookup -q=TXT _netblocks.google.com 8.8.4.4
-# IP may be all dead, then you need find IP from other pool
 $ cd google-hosts/scripts
-$ ./auto.sh
+$ ./auto.sh DNS # DNS is like 8.8.8.8, but you should try DNS in diffrent countries.
 ```
 
 Explanation of output 
