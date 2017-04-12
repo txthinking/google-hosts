@@ -11,7 +11,7 @@ This project provides some tools to help you find google IP.
 How
 ---
 
-[Requirements][Requirements]
+>> [Requirements][Requirements]
 
 **`getssl.sh` get IP detail**
 
@@ -100,13 +100,5 @@ License
 
 Licensed under The [MIT][MIT] License
 
-Donate
----
-
-* Alipay/Paypal: `cloud@txthinking.com`
-* Bitcoin: `17PCWDxxJ1wmNb9YmRrTJTXd4dvcJvWPVN`
-* [Donors][Donors]
-
 [Requirements]: https://github.com/txthinking/google-hosts/blob/master/scripts/README.md
 [MIT]: https://github.com/txthinking/google-hosts/blob/master/LICENSE
-[Donors]: https://github.com/txthinking/google-hosts/blob/master/DONORS.md
