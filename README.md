@@ -11,7 +11,7 @@ This project provides some tools to help you find google IP.
 How
 ---
 
->> [Requirements][Requirements]
+> [Requirements][Requirements]
 
 **`getssl.sh` get IP detail**
 
