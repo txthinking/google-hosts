@@ -1,7 +1,7 @@
 google-hosts
 ============
 
-[**What**](#what) | [**How**](#how) | [**Must**](#must) | [**Contributing**](#contributing) | [**License**](#license) | [**Donate**](#donate)
+[**What**](#what) | [**How**](#how) | [**Must**](#must) | [**Contributing**](#contributing) | [**License**](#license)
 
 What
 ---
