@@ -77,7 +77,7 @@ $ cd google-hosts/scripts
 $ ./auto.sh DNS # DNS is like 8.8.8.8, but you should try DNS in diffrent countries.
 ```
 
-Explanation of output 
+Explaination of output 
 
 | IP | LOSS | TIME | SSL |
 | --- | --- | --- | --- |
