@@ -75,6 +75,10 @@ Explaination of output
 
 -   vim:ts=4:sw=4:expandtab:ff=unix:encoding=utf8
 
+## Author
+
+A project by [txthinking](https://www.txthinking.com)
+
 ## License
 
 Licensed under The [MIT][MIT] License
