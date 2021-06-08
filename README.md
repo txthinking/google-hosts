@@ -2,6 +2,8 @@
 
 [**What**](#what) \| [**How**](#how) \| [**Must**](#must) \| [**Contributing**](#contributing) \| [**License**](#license)
 
+A project by [txthinking.com](https://www.txthinking.com)
+
 ## What
 
 This project provides some tools to help you find google IP.
@@ -74,10 +76,6 @@ Explaination of output
 ## Contributing
 
 -   vim:ts=4:sw=4:expandtab:ff=unix:encoding=utf8
-
-## Author
-
-A project by [txthinking](https://www.txthinking.com)
 
 ## License
 
