@@ -2,7 +2,7 @@
 
 [**What**](#what) \| [**How**](#how) \| [**Must**](#must) \| [**Contributing**](#contributing) \| [**License**](#license)
 
-A project by [txthinking.com](https://www.txthinking.com)
+❤️ A project by [txthinking.com](https://www.txthinking.com)
 
 ## What
 
