@@ -2,10 +2,8 @@
 
 [**What**](#what) \| [**How**](#how) \| [**Must**](#must) \| [**Contributing**](#contributing) \| [**License**](#license)
 
-[🗣 News](https://t.me/txthinking_news)
-[💬 Chat](https://join.txthinking.com)
+[🗣 News](https://t.me/s/txthinking_news)
 [🩸 Youtube](https://www.youtube.com/txthinking) 
-[❤️ Sponsor](https://github.com/sponsors/txthinking)
 
 ❤️ A project by [txthinking.com](https://www.txthinking.com)
 
