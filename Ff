@@ -1,0 +1,2 @@
+$ cd google-hosts/scripts
+$ ./apply.sh
